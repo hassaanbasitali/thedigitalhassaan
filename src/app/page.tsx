@@ -1,76 +1,76 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Footer } from "@/components/Footer"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Footer } from "@/components/Footer";
+import { useState } from "react";
 
 const projects = [
-  {
-    title: "Plus Accountants",
-    description: "Complete digital transformation with brand refresh, website rebuild, and marketing automation",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
-    link: "/projects/plus-accountants",
-    results: "+340% organic traffic"
-  },
-  {
-    title: "DUA Construction",
-    description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
-    link: "/projects/dua-construction",
-    results: "50+ qualified leads/month"
-  },
-  {
-    title: "ABH Systems",
-    description: "Strategic positioning pivot with ecosystem development for B2B lead generation",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    link: "/projects/abh-systems",
-    results: "$180K pipeline in 90 days"
-  }
-]
+{
+  title: "Plus Accountants",
+  description: "Complete digital transformation with brand refresh, website rebuild, and marketing automation",
+  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+  link: "/projects/plus-accountants",
+  results: "+340% organic traffic"
+},
+{
+  title: "DUA Construction",
+  description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
+  image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
+  link: "/projects/dua-construction",
+  results: "50+ qualified leads/month"
+},
+{
+  title: "ABH Systems",
+  description: "Strategic positioning pivot with ecosystem development for B2B lead generation",
+  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+  link: "/projects/abh-systems",
+  results: "$180K pipeline in 90 days"
+}];
+
 
 const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "CEO, Plus Accountants",
-    content: "Hassaan didn't just build us a website - he architected an entire growth system. The results speak for themselves: 340% increase in organic traffic and qualified leads flowing in consistently.",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-    rating: 5
-  },
-  {
-    name: "Michael Chen",
-    role: "Founder, DUA Construction",
-    content: "Working with Hassaan was transformative. He understood our business deeply and created a digital ecosystem that actually drives growth. We're seeing 50+ qualified leads every month now.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-    rating: 5
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Marketing Director, ABH Systems",
-    content: "Hassaan's strategic approach is unmatched. He positioned us perfectly in the market and built systems that generated $180K in pipeline within 90 days. Incredible ROI.",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-    rating: 5
-  }
-]
+{
+  name: "Sarah Johnson",
+  role: "CEO, Plus Accountants",
+  content: "Hassaan didn't just build us a website - he architected an entire growth system. The results speak for themselves: 340% increase in organic traffic and qualified leads flowing in consistently.",
+  avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+  rating: 5
+},
+{
+  name: "Michael Chen",
+  role: "Founder, DUA Construction",
+  content: "Working with Hassaan was transformative. He understood our business deeply and created a digital ecosystem that actually drives growth. We're seeing 50+ qualified leads every month now.",
+  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+  rating: 5
+},
+{
+  name: "Emily Rodriguez",
+  role: "Marketing Director, ABH Systems",
+  content: "Hassaan's strategic approach is unmatched. He positioned us perfectly in the market and built systems that generated $180K in pipeline within 90 days. Incredible ROI.",
+  avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+  rating: 5
+}];
+
 
 export default function Home() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    alert("Thank you! I'll get back to you soon.")
-    setFormData({ name: "", email: "", message: "" })
-    setIsSubmitting(false)
-  }
+    e.preventDefault();
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    alert("Thank you! I'll get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
+  };
 
   return (
     <>
@@ -81,14 +81,14 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+              transition={{ duration: 0.8 }}>
+
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                I don't just build websites. I architect complete digital ecosystems that drive measurable business growth.
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services">
@@ -108,21 +108,21 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative"
-            >
+              className="relative">
+
               <motion.div
                 animate={{ rotateY: [0, 360] }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="relative w-full aspect-square max-w-md mx-auto"
-                style={{ transformStyle: "preserve-3d" }}
-              >
+                style={{ transformStyle: "preserve-3d" }}>
+
                 <Image
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=8000&height=8000&resize=contain"
                   alt="Hassaan Basit"
                   fill
                   className="rounded-2xl object-cover shadow-2xl border-4 border-[#39FF14]"
-                  priority
-                />
+                  priority />
+
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#39FF14]/20 to-transparent" />
               </motion.div>
             </motion.div>
@@ -138,8 +138,8 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Not Your Average <span className="text-[#39FF14]">Web Developer</span>
             </h2>
@@ -151,17 +151,17 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
-              { icon: "🎯", title: "Strategic Thinking", desc: "Business-first approach to every project" },
-              { icon: "🔧", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
-              { icon: "📈", title: "Growth Focus", desc: "Measurable results that move the needle" }
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
+            { icon: "🎯", title: "Strategic Thinking", desc: "Business-first approach to every project" },
+            { icon: "🔧", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
+            { icon: "📈", title: "Growth Focus", desc: "Measurable results that move the needle" }].
+            map((item, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}>
+
                 <Card className="text-center hover:border-[#39FF14] transition-colors">
                   <CardHeader>
                     <div className="text-5xl mb-4">{item.icon}</div>
@@ -172,7 +172,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
 
           <div className="text-center">
@@ -193,8 +193,8 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Featured <span className="text-[#39FF14]">Projects</span>
             </h2>
@@ -204,23 +204,23 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
+            {projects.map((project, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}>
+
                 <Link href={project.link}>
                   <Card className="overflow-hidden hover:border-[#39FF14] transition-all duration-300 group">
                     <div className="relative h-48 overflow-hidden">
                       <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-300" />
+
                       <div className="absolute top-4 right-4 bg-[#39FF14] text-black px-3 py-1 rounded-full text-sm font-semibold">
                         {project.results}
                       </div>
@@ -237,7 +237,7 @@ export default function Home() {
                   </Card>
                 </Link>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -250,8 +250,8 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Client <span className="text-[#39FF14]">Success Stories</span>
             </h2>
@@ -261,33 +261,33 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
+            {testimonials.map((testimonial, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}>
+
                 <Card className="h-full">
                   <CardHeader>
                     <div className="flex items-center gap-4 mb-4">
                       <Image
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        width={60}
-                        height={60}
-                        className="rounded-full"
-                      />
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      width={60}
+                      height={60}
+                      className="rounded-full" />
+
                       <div>
                         <CardTitle className="text-lg">{testimonial.name}</CardTitle>
                         <CardDescription>{testimonial.role}</CardDescription>
                       </div>
                     </div>
                     <div className="flex gap-1">
-                      {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star key={i} size={16} fill="#39FF14" stroke="#39FF14" />
-                      ))}
+                      {Array.from({ length: testimonial.rating }).map((_, i) =>
+                    <Star key={i} size={16} fill="#39FF14" stroke="#39FF14" />
+                    )}
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -295,7 +295,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -308,8 +308,8 @@ export default function Home() {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+              transition={{ duration: 0.6 }}>
+
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Let's Build Your
                 <span className="text-[#39FF14]"> Digital Ecosystem</span>
@@ -353,8 +353,8 @@ export default function Home() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+              transition={{ duration: 0.6 }}>
+
               <Card>
                 <CardHeader>
                   <CardTitle>Send Me a Message</CardTitle>
@@ -367,8 +367,8 @@ export default function Home() {
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        required
-                      />
+                        required />
+
                     </div>
                     <div>
                       <Input
@@ -376,8 +376,8 @@ export default function Home() {
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        required
-                      />
+                        required />
+
                     </div>
                     <div>
                       <Textarea
@@ -385,14 +385,14 @@ export default function Home() {
                         rows={5}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        required
-                      />
+                        required />
+
                     </div>
                     <Button
                       type="submit"
                       className="w-full bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold"
-                      disabled={isSubmitting}
-                    >
+                      disabled={isSubmitting}>
+
                       {isSubmitting ? "Sending..." : "Send Message"}
                       <Send className="ml-2" size={18} />
                     </Button>
@@ -405,6 +405,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
-  )
+    </>);
+
 }
