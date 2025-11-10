@@ -87,7 +87,7 @@ export default function Home() {
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
 
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
