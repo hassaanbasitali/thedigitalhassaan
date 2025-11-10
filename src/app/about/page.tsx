@@ -167,7 +167,7 @@ export default function AboutPage() {
       </section>
 
       {/* My Architectural Process */}
-      <section className="py-20 px-6 bg-card !w-full !h-[775px]">
+      <section className="py-20 px-6 bg-card !w-full !h-[743px]">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
