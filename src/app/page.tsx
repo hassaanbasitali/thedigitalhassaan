@@ -37,7 +37,7 @@ const projects = [
 
 const testimonials = [
 {
-  name: "Sarah Johnson",
+  name: "Muhammad Kamran",
   role: "CEO, Plus Accountants",
   content: "Hassaan didn't just build us a website - he architected an entire growth system. The results speak for themselves: 340% increase in organic traffic and qualified leads flowing in consistently.",
   avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
