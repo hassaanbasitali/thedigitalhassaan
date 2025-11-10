@@ -280,7 +280,7 @@ export default function Home() {
                       className="rounded-full" />
 
                       <div>
-                        <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                        <CardTitle className="text-lg !whitespace-pre-line">{testimonial.name}</CardTitle>
                         <CardDescription>{testimonial.role}</CardDescription>
                       </div>
                     </div>
