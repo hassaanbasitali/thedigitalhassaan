@@ -226,7 +226,7 @@ export default function Home() {
                       </div>
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors">{project.title}</CardTitle>
+                      <CardTitle className="group-hover:text-[#39FF14] transition-colors !whitespace-pre-line">{project.title}</CardTitle>
                       <CardDescription>{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
