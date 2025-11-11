@@ -153,7 +153,7 @@ export default function Home() {
             {[
             { icon: "", title: "Strategic Thinking", desc: "Business-first approach to every project" },
             { icon: "", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
-            { icon: "📈", title: "Growth Focus", desc: "Measurable results that move the needle" }].
+            { icon: "", title: "Growth Focus", desc: "Measurable results that move the needle" }].
             map((item, i) =>
             <motion.div
               key={i}
