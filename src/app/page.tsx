@@ -164,7 +164,7 @@ export default function Home() {
 
                 <Card className="text-center hover:border-[#39FF14] transition-colors">
                   <CardHeader>
-                    <div className="text-5xl mb-4 !whitespace-pre-line !bg-none !bg-cover !bg-center">{item.icon}</div>
+                    <div className="text-5xl mb-4 !whitespace-pre-line !bg-none !bg-cover !bg-center !whitespace-pre-line">{item.icon}</div>
                     <CardTitle>{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
