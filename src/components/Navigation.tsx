@@ -78,7 +78,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-[#39FF14]/20 pt-4">
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-[#39FF14]/20 pt-4 bg-background/95 backdrop-blur-md rounded-lg -mx-6 px-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
