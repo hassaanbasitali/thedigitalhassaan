@@ -17,7 +17,7 @@ const projects = [
   description: "Complete digital transformation with brand refresh, website rebuild, and marketing automation",
   image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
   link: "/projects/plus-accountants",
-  results: "+340% organic traffic"
+  results: "+70% organic traffic"
 },
 {
   title: "DUA Construction",
@@ -87,8 +87,8 @@ export default function Home() {
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services">
