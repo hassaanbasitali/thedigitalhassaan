@@ -24,7 +24,7 @@ const projects = [
   description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
   image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
   link: "/projects/dua-construction",
-  results: "50+ qualified leads/month"
+  results: "12+ qualified leads/month"
 },
 {
   title: "ABH Systems",
