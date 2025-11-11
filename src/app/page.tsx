@@ -20,7 +20,7 @@ const projects = [
   results: "+70% organic traffic"
 },
 {
-  title: "Dua Construction Services",
+  title: "DUA Construction",
   description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
   image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
   link: "/projects/dua-construction",
@@ -85,9 +85,9 @@ export default function Home() {
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Digital Growth
-                <span className="text-[#39FF14]"> Architect</span>
+                <span className="text-white"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
 
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -97,7 +97,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-black">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
                     Get In Touch
                   </Button>
                 </Link>
@@ -140,10 +140,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Not Your Average <span className="text-[#39FF14]">Web Developer</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Not Your Average Web Developer
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white max-w-3xl mx-auto">
               I'm a Digital Growth Architect who takes a holistic, strategic approach to online presence. 
               Every website I build is part of a larger ecosystem designed to attract, convert, and retain customers.
             </p>
@@ -162,13 +162,13 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}>
 
-                <Card className="text-center hover:border-[#39FF14] transition-colors">
+                <Card className="text-center hover:border-white transition-colors">
                   <CardHeader>
                     <div className="text-5xl mb-4 !whitespace-pre-line !bg-none !bg-cover !bg-center !whitespace-pre-line !whitespace-pre-line !w-full !h-[54px]">{item.icon}</div>
-                    <CardTitle className="!not-italic !opacity-100 !flex">{item.title}</CardTitle>
+                    <CardTitle className="!not-italic !opacity-100 !flex text-white">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{item.desc}</p>
+                    <p className="text-white">{item.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -177,7 +177,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/about">
-              <Button variant="outline" size="lg" className="border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-black">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
                 Learn More About My Approach <ArrowRight className="ml-2" size={18} />
               </Button>
             </Link>
@@ -195,10 +195,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Featured <span className="text-[#39FF14]">Projects</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Featured Projects
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white max-w-2xl mx-auto">
               Real results from real businesses. See how I've helped companies transform their digital presence.
             </p>
           </motion.div>
@@ -213,7 +213,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: i * 0.1 }}>
 
                 <Link href={project.link}>
-                  <Card className="overflow-hidden hover:border-[#39FF14] transition-all duration-300 group">
+                  <Card className="overflow-hidden hover:border-white transition-all duration-300 group">
                     <div className="relative h-48 overflow-hidden">
                       <Image
                       src={project.image}
@@ -221,16 +221,16 @@ export default function Home() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
 
-                      <div className="absolute top-4 right-4 bg-[#39FF14] text-black px-3 py-1 rounded-full text-sm font-semibold !whitespace-pre-line !whitespace-pre-line">
+                      <div className="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">
                         {project.results}
                       </div>
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors !whitespace-pre-line">{project.title}</CardTitle>
-                      <CardDescription>{project.description}</CardDescription>
+                      <CardTitle className="group-hover:text-white transition-colors text-white">{project.title}</CardTitle>
+                      <CardDescription className="text-white">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <span className="text-[#39FF14] font-semibold flex items-center">
+                      <span className="text-white font-semibold flex items-center">
                         View Case Study <ArrowRight className="ml-2" size={16} />
                       </span>
                     </CardContent>
