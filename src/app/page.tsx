@@ -221,7 +221,7 @@ export default function Home() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
 
-                      <div className="absolute top-4 right-4 bg-[#39FF14] text-black px-3 py-1 rounded-full text-sm font-semibold !whitespace-pre-line">
+                      <div className="absolute top-4 right-4 bg-[#39FF14] text-black px-3 py-1 rounded-full text-sm font-semibold !whitespace-pre-line !whitespace-pre-line">
                         {project.results}
                       </div>
                     </div>
