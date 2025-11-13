@@ -294,7 +294,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/about">
-              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background">
+              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background !whitespace-pre-line">
                 <ArrowRight className="ml-2" size={18} />
               </Button>
             </Link>
