@@ -304,56 +304,8 @@ export default function Home() {
 
       {/* Featured Projects */}
       <section className="py-20 px-6">
-        <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Featured Projects
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real results from real businesses. See how I've helped companies transform their digital presence.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project, i) =>
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}>
-
-                <Link href={project.link}>
-                  <Card className="overflow-hidden hover:border-foreground/20 transition-all duration-300 group">
-                    <div className="relative h-48 overflow-hidden">
-                      <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
-                      <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <span className="text-foreground font-semibold flex items-center">
-                        View Case Study <ArrowRight className="ml-2" size={16} />
-                      </span>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
-            )}
-          </div>
-        </div>
-      </section>
+</section>
 
       {/* Testimonials */}
       <section className="py-20 px-6 bg-card">
