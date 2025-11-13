@@ -377,36 +377,8 @@ export default function Home() {
               </p>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center">
-                    <Mail className="text-[#39FF14]" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">hassaan@example.com</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center">
-                    <Phone className="text-[#39FF14]" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <p className="text-muted-foreground">+1 (234) 567-890</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center">
-                    <MapPin className="text-[#39FF14]" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Location</p>
-                    <p className="text-muted-foreground">Available Globally</p>
-                  </div>
-                </div>
-
                 {/* Social Media Links */}
-                <div className="pt-6">
+                <div className="pt-2">
                   <p className="font-semibold text-foreground mb-4">Connect With Me</p>
                   <div className="flex items-center gap-3">
                     <a 
