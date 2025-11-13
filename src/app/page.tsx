@@ -285,7 +285,7 @@ export default function Home() {
                     <CardTitle className="!not-italic !opacity-100 !flex text-foreground">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{item.desc}</p>
+                    <p className="text-muted-foreground !whitespace-pre-line">{item.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
