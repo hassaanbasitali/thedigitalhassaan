@@ -83,7 +83,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}>
 
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
@@ -97,7 +97,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                  <Button size="lg" variant="outline" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background">
                     Get In Touch
                   </Button>
                 </Link>
@@ -133,10 +133,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Not Your Average Web Developer
             </h2>
-            <p className="text-lg text-white max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               I'm a Digital Growth Architect who takes a holistic, strategic approach to online presence. 
               Every website I build is part of a larger ecosystem designed to attract, convert, and retain customers.
             </p>
@@ -155,13 +155,13 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}>
 
-                <Card className="text-center hover:border-white transition-colors">
+                <Card className="text-center hover:border-foreground/20 transition-colors">
                   <CardHeader>
                     <div className="text-5xl mb-4 !whitespace-pre-line !bg-none !bg-cover !bg-center !whitespace-pre-line !whitespace-pre-line !w-full !h-[54px]">{item.icon}</div>
-                    <CardTitle className="!not-italic !opacity-100 !flex text-white">{item.title}</CardTitle>
+                    <CardTitle className="!not-italic !opacity-100 !flex text-foreground">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white">{item.desc}</p>
+                    <p className="text-muted-foreground">{item.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -170,7 +170,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/about">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background">
                 Learn More About My Approach <ArrowRight className="ml-2" size={18} />
               </Button>
             </Link>
@@ -188,10 +188,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Featured Projects
             </h2>
-            <p className="text-lg text-white max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Real results from real businesses. See how I've helped companies transform their digital presence.
             </p>
           </motion.div>
@@ -206,7 +206,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: i * 0.1 }}>
 
                 <Link href={project.link}>
-                  <Card className="overflow-hidden hover:border-white transition-all duration-300 group">
+                  <Card className="overflow-hidden hover:border-foreground/20 transition-all duration-300 group">
                     <div className="relative h-48 overflow-hidden">
                       <Image
                       src={project.image}
@@ -215,11 +215,11 @@ export default function Home() {
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-white transition-colors text-white">{project.title}</CardTitle>
-                      <CardDescription className="text-white">{project.description}</CardDescription>
+                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
+                      <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <span className="text-white font-semibold flex items-center">
+                      <span className="text-foreground font-semibold flex items-center">
                         View Case Study <ArrowRight className="ml-2" size={16} />
                       </span>
                     </CardContent>
@@ -241,7 +241,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Client <span className="text-[#39FF14]">Success Stories</span>
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -269,8 +269,8 @@ export default function Home() {
                       className="rounded-full" />
 
                       <div>
-                        <CardTitle className="text-lg !whitespace-pre-line">{testimonial.name}</CardTitle>
-                        <CardDescription>{testimonial.role}</CardDescription>
+                        <CardTitle className="text-lg !whitespace-pre-line text-foreground">{testimonial.name}</CardTitle>
+                        <CardDescription className="text-muted-foreground">{testimonial.role}</CardDescription>
                       </div>
                     </div>
                     <div className="flex gap-1">
@@ -299,7 +299,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}>
 
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Let's Build Your
                 <span className="text-[#39FF14]"> Digital Ecosystem</span>
               </h2>
@@ -313,7 +313,7 @@ export default function Home() {
                     <Mail className="text-[#39FF14]" size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold">Email</p>
+                    <p className="font-semibold text-foreground">Email</p>
                     <p className="text-muted-foreground">hassaan@example.com</p>
                   </div>
                 </div>
@@ -322,7 +322,7 @@ export default function Home() {
                     <Phone className="text-[#39FF14]" size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold">Phone</p>
+                    <p className="font-semibold text-foreground">Phone</p>
                     <p className="text-muted-foreground">+1 (234) 567-890</p>
                   </div>
                 </div>
@@ -331,7 +331,7 @@ export default function Home() {
                     <MapPin className="text-[#39FF14]" size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold">Location</p>
+                    <p className="font-semibold text-foreground">Location</p>
                     <p className="text-muted-foreground">Available Globally</p>
                   </div>
                 </div>
@@ -346,8 +346,8 @@ export default function Home() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Send Me a Message</CardTitle>
-                  <CardDescription>Fill out the form below and I'll get back to you within 24 hours.</CardDescription>
+                  <CardTitle className="text-foreground">Send Me a Message</CardTitle>
+                  <CardDescription className="text-muted-foreground">Fill out the form below and I'll get back to you within 24 hours.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
