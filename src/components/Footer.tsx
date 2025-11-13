@@ -12,7 +12,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-foreground !whitespace-pre-line">thedigital</span>
-              <span className="text-[#39FF14]">hassaan</span>
+              <span className="text-[#39FF14] !whitespace-pre-line">hassaan</span>
             </h3>
             <p className="text-muted-foreground mb-4">
               Digital Growth Architect specializing in building comprehensive digital ecosystems that drive measurable business growth.
