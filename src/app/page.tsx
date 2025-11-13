@@ -142,8 +142,8 @@ export default function Home() {
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">I create interconnected Digital Ecosystems for service-based businesses, engineered to increase their sales and client acquisition.
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services">
@@ -229,16 +229,16 @@ export default function Home() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
                 
-                <div 
-                  className={`bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)] ${
-                    activePrincipleIndex === i ? '-translate-y-2 shadow-[0_0_30px_rgba(57,255,20,0.3)]' : ''
-                  }`}
-                  onTouchStart={() => setActivePrincipleIndex(i)}
-                  onTouchEnd={() => setTimeout(() => setActivePrincipleIndex(null), 300)}
-                  onClick={() => {
-                    setActivePrincipleIndex(i);
-                    setTimeout(() => setActivePrincipleIndex(null), 300);
-                  }}>
+                <div
+                className={`bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)] ${
+                activePrincipleIndex === i ? '-translate-y-2 shadow-[0_0_30px_rgba(57,255,20,0.3)]' : ''}`
+                }
+                onTouchStart={() => setActivePrincipleIndex(i)}
+                onTouchEnd={() => setTimeout(() => setActivePrincipleIndex(null), 300)}
+                onClick={() => {
+                  setActivePrincipleIndex(i);
+                  setTimeout(() => setActivePrincipleIndex(null), 300);
+                }}>
                   {/* Number */}
                   <div className="text-6xl md:text-7xl font-bold mb-6" style={{ color: 'rgba(255, 255, 255, 0.2)' }}>
                     {principle.number}
@@ -397,30 +397,30 @@ export default function Home() {
                 <div className="pt-2">
                   <p className="font-semibold text-foreground mb-4">Connect With Me</p>
                   <div className="flex items-center gap-3">
-                    <a 
-                      href="https://www.instagram.com/thedigitalhassaan/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.instagram.com/thedigitalhassaan/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Instagram className="text-[#39FF14]" size={20} />
                     </a>
-                    <a 
-                      href="https://www.facebook.com/thedigitalhassaan/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.facebook.com/thedigitalhassaan/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Facebook className="text-[#39FF14]" size={20} />
                     </a>
-                    <a 
-                      href="https://www.linkedin.com/in/thedigitalhassaan/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.linkedin.com/in/thedigitalhassaan/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Linkedin className="text-[#39FF14]" size={20} />
                     </a>
-                    <a 
-                      href="https://www.fiverr.com/hassaanbasit/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.fiverr.com/hassaanbasit/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Globe className="text-[#39FF14]" size={20} />
@@ -486,6 +486,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
-  );
+    </>);
+
 }
