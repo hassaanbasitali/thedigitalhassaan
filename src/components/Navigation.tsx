@@ -48,8 +48,16 @@ export function Navigation() {
 
             </div>
             <div className="text-lg sm:text-xl md:text-2xl font-bold">
-              <span className="text-foreground transition-colors group-hover:text-[#39FF14] !whitespace-pre-line">thedigital</span>
-              <span className="text-[#39FF14]">hassaan</span>
+              {/* Mobile: Show abbreviated */}
+              <span className="sm:hidden">
+                <span className="text-foreground transition-colors group-hover:text-[#39FF14]">td</span>
+                <span className="text-[#39FF14]">h</span>
+              </span>
+              {/* Desktop: Show full name */}
+              <span className="hidden sm:inline">
+                <span className="text-foreground transition-colors group-hover:text-[#39FF14]">thedigital</span>
+                <span className="text-[#39FF14]">hassaan</span>
+              </span>
             </div>
           </Link>
 
