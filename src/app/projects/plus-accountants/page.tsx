@@ -29,20 +29,6 @@ export default function PlusAccountantsCase() {
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
               Complete digital transformation delivering 340% increase in organic traffic and consistent qualified lead flow
             </p>
-            <div className="flex flex-wrap gap-4">
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Brand Strategy
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Website Development
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                SEO Optimization
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Marketing Automation
-              </span>
-            </div>
           </motion.div>
         </div>
       </section>

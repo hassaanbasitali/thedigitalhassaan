@@ -29,20 +29,6 @@ export default function DUAConstructionCase() {
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
               Multi-phase ecosystem build generating 50+ qualified leads per month and establishing market authority
             </p>
-            <div className="flex flex-wrap gap-4">
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Lead Generation
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Brand Authority
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                Content Marketing
-              </span>
-              <span className="px-4 py-2 bg-[#39FF14]/10 border border-[#39FF14] rounded-full text-sm font-semibold">
-                CRM Integration
-              </span>
-            </div>
           </motion.div>
         </div>
       </section>

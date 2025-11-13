@@ -213,10 +213,6 @@ export default function Home() {
                       alt={project.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
-
-                      <div className="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">
-                        {project.results}
-                      </div>
                     </div>
                     <CardHeader>
                       <CardTitle className="group-hover:text-white transition-colors text-white">{project.title}</CardTitle>

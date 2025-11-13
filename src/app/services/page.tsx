@@ -135,6 +135,60 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* A La Carte Services */}
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              A La Carte <span className="text-[#39FF14]">Services</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Need something specific? Choose individual services to address your exact needs
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {alacarte.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+              >
+                <Card className="h-full flex flex-col hover:border-[#39FF14] transition-colors group">
+                  <CardHeader>
+                    <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
+                      {service.title}
+                    </CardTitle>
+                    <div className="text-2xl font-bold text-[#39FF14] my-2">
+                      {service.price}
+                    </div>
+                    <CardDescription>{service.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1">
+                    <ul className="space-y-2">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm">
+                          <Check className="text-[#39FF14] flex-shrink-0 mt-0.5" size={16} />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Signature Package */}
       <section className="py-20 px-6 bg-gradient-to-br from-[#39FF14]/10 via-transparent to-[#39FF14]/5">
         <div className="container mx-auto max-w-5xl">
@@ -229,60 +283,6 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
           </motion.div>
-        </div>
-      </section>
-
-      {/* A La Carte Services */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              A La Carte <span className="text-[#39FF14]">Services</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Need something specific? Choose individual services to address your exact needs
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {alacarte.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <Card className="h-full flex flex-col hover:border-[#39FF14] transition-colors group">
-                  <CardHeader>
-                    <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
-                      {service.title}
-                    </CardTitle>
-                    <div className="text-2xl font-bold text-[#39FF14] my-2">
-                      {service.price}
-                    </div>
-                    <CardDescription>{service.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <ul className="space-y-2">
-                      {service.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <Check className="text-[#39FF14] flex-shrink-0 mt-0.5" size={16} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

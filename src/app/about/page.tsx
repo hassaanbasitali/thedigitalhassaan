@@ -29,75 +29,58 @@ const processSteps = [
   content: "After launch, I provide ongoing support to ensure your ecosystem performs optimally. I monitor key metrics, make data-driven improvements, and help you scale as your business grows."
 }];
 
-
-const advantageComparisons = [
+const architectAdvantage = [
 {
-  category: "Approach",
-  traditional: "Build a website",
-  architect: "Design a complete digital ecosystem"
+  number: "01",
+  title: "A STRATEGIC PARTNER",
+  description: "I don't just execute tasks; I analyze your business goals to create a comprehensive plan that ensures we are always moving in the right direction."
 },
 {
-  category: "Focus",
-  traditional: "Aesthetics and features",
-  architect: "Business growth and ROI"
+  number: "02",
+  title: "METICULOUS ATTENTION TO DETAIL",
+  description: "I treat your business as if it were my own, ensuring every element is perfect and aligned with our strategy."
 },
 {
-  category: "Strategy",
-  traditional: "Reactive to client requests",
-  architect: "Proactive strategic planning"
+  number: "03",
+  title: "TRANSPARENT & CLEAR COMMUNICATION",
+  description: "You will never be left in the dark. I believe in maintaining open, honest, and regular communication so you are always confident in the project's progress."
 },
 {
-  category: "Integration",
-  traditional: "Standalone website",
-  architect: "Connected tools and platforms"
-},
-{
-  category: "Results",
-  traditional: "A nice-looking website",
-  architect: "Measurable business growth"
-},
-{
-  category: "Support",
-  traditional: "Limited post-launch",
-  architect: "Ongoing optimization and scaling"
+  number: "04",
+  title: "A RELENTLESS FOCUS ON ROI",
+  description: "My ultimate goal is to grow your business. I am obsessed with tracking performance and ensuring that your investment yields a real, measurable financial return."
 }];
-
 
 const blueprintSteps = [
 {
   step: "01",
   title: "Brand Foundation",
   description: "Positioning, messaging, and visual identity that resonates with your ideal customers",
-  icon: "🎨",
-  color: "from-purple-500/20 to-pink-500/20"
+  color: "#1A1A1A"
 },
 {
   step: "02",
   title: "High-Converting Website",
   description: "Fast, beautiful, and optimized for turning visitors into customers",
-  icon: "🌐",
-  color: "from-blue-500/20 to-cyan-500/20"
+  color: "#F5F5F5"
 },
 {
   step: "03",
   title: "Content Engine",
   description: "SEO-optimized content that attracts organic traffic and establishes authority",
-  icon: "📝",
-  color: "from-green-500/20 to-emerald-500/20"
+  color: "#39FF14"
 },
 {
   step: "04",
   title: "Marketing Automation",
   description: "Automated systems for lead capture, nurturing, and customer retention",
-  icon: "⚡",
-  color: "from-yellow-500/20 to-orange-500/20"
+  color: "#1A1A1A"
 },
 {
   step: "05",
   title: "Analytics & Growth",
   description: "Data-driven insights and continuous optimization for sustainable growth",
-  icon: "📊",
-  color: "from-red-500/20 to-rose-500/20"
+  color: "#F5F5F5"
 }];
 
 
@@ -164,8 +147,48 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* The Architect's Advantage - NEW SECTION */}
+      <section className="py-20 px-6 bg-card">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12">
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              The Architect's <span className="text-[#39FF14]">Advantage</span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}>
+
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {architectAdvantage.map((item, index) =>
+              <AccordionItem key={index} value={`advantage-${index}`} className="border-2 border-border rounded-lg px-6 hover:border-[#39FF14] transition-colors">
+                  <AccordionTrigger className="text-left text-lg md:text-xl font-bold hover:text-[#39FF14] py-6">
+                    <span className="flex items-center gap-4">
+                      <span className="text-[#39FF14] text-2xl font-bold">{item.number}.</span>
+                      <span>{item.title}</span>
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base md:text-lg leading-relaxed pb-6 pl-14">
+                    {item.description}
+                  </AccordionContent>
+                </AccordionItem>
+              )}
+            </Accordion>
+          </motion.div>
+        </div>
+      </section>
+
       {/* My Architectural Process */}
-      <section className="py-20 px-6 bg-card !w-full !h-[743px]">
+      <section className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -204,70 +227,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Architect's Advantage */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12">
-
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              The Architect's <span className="text-[#39FF14]">Advantage</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Traditional web developers vs. a Digital Growth Architect
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            {advantageComparisons.map((comparison, index) =>
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}>
-
-                <Card className="h-full hover:border-[#39FF14] transition-colors">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-[#39FF14]">{comparison.category}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="h-6 w-6 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-red-500 text-sm">✕</span>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-muted-foreground mb-1">Traditional Developer</p>
-                        <p className="text-foreground">{comparison.traditional}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="h-6 w-6 rounded-full bg-[#39FF14]/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <CheckCircle className="text-[#39FF14]" size={16} />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#39FF14] mb-1">Digital Growth Architect</p>
-                        <p className="text-foreground font-semibold">{comparison.architect}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            )}
-          </motion.div>
-        </div>
-      </section>
-
       {/* 5-Step Ecosystem Blueprint */}
       <section className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
@@ -296,20 +255,30 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={index === 4 ? "md:col-span-2 lg:col-span-1" : ""}>
 
-                <Card className={`h-full bg-gradient-to-br ${item.color} hover:border-[#39FF14] transition-all duration-300 group`}>
+                <Card 
+                  className={`h-full hover:border-[#39FF14] transition-all duration-300 group`}
+                  style={{ 
+                    backgroundColor: item.color,
+                    borderColor: item.color === "#39FF14" ? "#39FF14" : undefined
+                  }}>
                   <CardHeader>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-6xl">{item.icon}</span>
-                      <span className="text-4xl font-bold text-[#39FF14] opacity-50 group-hover:opacity-100 transition-opacity">
+                      <span 
+                        className="text-4xl font-bold opacity-50 group-hover:opacity-100 transition-opacity"
+                        style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#39FF14" }}>
                         {item.step}
                       </span>
                     </div>
-                    <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
+                    <CardTitle 
+                      className="text-xl group-hover:text-[#39FF14] transition-colors"
+                      style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#FFFFFF" }}>
                       {item.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-base">
+                    <CardDescription 
+                      className="text-base"
+                      style={{ color: item.color === "#F5F5F5" ? "#666666" : item.color === "#39FF14" ? "#000000" : "#A3A3A3" }}>
                       {item.description}
                     </CardDescription>
                   </CardContent>
