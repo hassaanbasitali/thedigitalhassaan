@@ -31,7 +31,7 @@ export function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300 !border-transparent"
                 aria-label="GitHub">
 
                 <Github size={18} className="!text-transparent !bg-transparent" />
