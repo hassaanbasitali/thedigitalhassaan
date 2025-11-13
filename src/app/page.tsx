@@ -27,7 +27,7 @@ const projects = [
   results: "12+ qualified leads/month"
 },
 {
-  title: "ABH Systems",
+  title: "ABH Systems Pvt Ltd",
   description: "Strategic positioning pivot with ecosystem development for B2B lead generation",
   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
   link: "/projects/abh-systems",
