@@ -40,7 +40,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300 !bg-transparent !text-transparent !border-transparent"
                 aria-label="Twitter">
 
                 <Twitter size={18} />
