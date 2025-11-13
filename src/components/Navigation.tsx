@@ -41,7 +41,7 @@ export function Navigation() {
             <span className="text-foreground transition-colors group-hover:text-[#39FF14] !whitespace-pre-line">thedigital
 
             </span>
-            <span className="text-[#39FF14]"> Basit</span>
+            <span className="text-[#39FF14]">hassaan</span>
           </Link>
 
           {/* Desktop Navigation */}
