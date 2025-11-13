@@ -52,7 +52,7 @@ const testimonials = [
 },
 {
   name: "Emily Rodriguez",
-  role: "Marketing Director, ABH Systems",
+  role: "CEO, ABH Systems Pvt Ltd",
   content: "Hassaan's strategic approach is unmatched. He positioned us perfectly in the market and built systems that generated $180K in pipeline within 90 days. Incredible ROI.",
   avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
   rating: 5
