@@ -59,32 +59,32 @@ const testimonials = [
 }];
 
 const corePrinciples = [
-  {
-    number: "01.",
-    title: "The All-in-One Engine",
-    description: "Instead of scattered parts, I build your entire digital ecosystem. A single, unified system where every component works in perfect harmony."
-  },
-  {
-    number: "02.",
-    title: "A Strategic Foundation",
-    description: "Every project begins with a deep-dive analysis. We don't guess; we architect a data-driven blueprint for your success."
-  },
-  {
-    number: "03.",
-    title: "A Relentless Focus on ROI",
-    description: "My ultimate goal is your growth. I am obsessed with tracking performance and ensuring that your investment yields a real, measurable financial return."
-  },
-  {
-    number: "04.",
-    title: "A Single, Dedicated Partner",
-    description: "You get one point of contact and one person who takes full responsibility for the project's success, saving you time and eliminating agency headaches."
-  },
-  {
-    number: "05.",
-    title: "Sustainable, Scalable Systems",
-    description: "I don't just run campaigns; I build the organized systems and processes that allow your business to manage and scale its success long-term."
-  }
-];
+{
+  number: "01.",
+  title: "The All-in-One Engine",
+  description: "Instead of scattered parts, I build your entire digital ecosystem. A single, unified system where every component works in perfect harmony."
+},
+{
+  number: "02.",
+  title: "A Strategic Foundation",
+  description: "Every project begins with a deep-dive analysis. We don't guess; we architect a data-driven blueprint for your success."
+},
+{
+  number: "03.",
+  title: "A Relentless Focus on ROI",
+  description: "My ultimate goal is your growth. I am obsessed with tracking performance and ensuring that your investment yields a real, measurable financial return."
+},
+{
+  number: "04.",
+  title: "A Single, Dedicated Partner",
+  description: "You get one point of contact and one person who takes full responsibility for the project's success, saving you time and eliminating agency headaches."
+},
+{
+  number: "05.",
+  title: "Sustainable, Scalable Systems",
+  description: "I don't just run campaigns; I build the organized systems and processes that allow your business to manage and scale its success long-term."
+}];
+
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
 
           {/* Horizontal Scrolling Carousel */}
-          <div 
+          <div
             ref={scrollContainerRef}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
@@ -213,14 +213,14 @@ export default function Home() {
             {/* Spacer to center first card */}
             <div className="flex-shrink-0 w-6 md:w-12" />
             
-            {corePrinciples.map((principle, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
+            {corePrinciples.map((principle, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
                 
                 <div className="bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)]">
                   {/* Number */}
@@ -239,7 +239,7 @@ export default function Home() {
                   </p>
                 </div>
               </motion.div>
-            ))}
+            )}
             
             {/* Spacer to show partial card on right */}
             <div className="flex-shrink-0 w-6 md:w-12" />
@@ -268,7 +268,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
-            { icon: "", title: "Strategic Thinking", desc: "Business-first approach to every project" },
+            { icon: "", title: "Strategic Thinking", desc: "" },
             { icon: "", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
             { icon: "", title: "Growth Focus", desc: "Measurable results that move the needle" }].
             map((item, i) =>
@@ -518,6 +518,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
-  );
+    </>);
+
 }
