@@ -300,7 +300,7 @@ export default function Home() {
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
+                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground !whitespace-pre-line">{project.title}</CardTitle>
                       <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
