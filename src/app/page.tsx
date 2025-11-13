@@ -247,61 +247,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* About Me Section */}
-      <section className="py-20 px-6 bg-card">
-        <div className="container mx-auto max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12">
-
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Not Your Average Web Developer
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              I'm a Digital Growth Architect who takes a holistic, strategic approach to online presence. 
-              Every website I build is part of a larger ecosystem designed to attract, convert, and retain customers.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-            { icon: "", title: "", desc: "" },
-            { icon: "", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
-            { icon: "", title: "Growth Focus", desc: "Measurable results that move the needle" }].
-            map((item, i) =>
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}>
-
-                <Card className="text-center hover:border-foreground/20 transition-colors">
-                  <CardHeader>
-                    <div className="text-5xl mb-4 !whitespace-pre-line !bg-none !bg-cover !bg-center !whitespace-pre-line !whitespace-pre-line !w-full !h-[54px]">{item.icon}</div>
-                    <CardTitle className="!not-italic !opacity-100 !flex text-foreground !whitespace-pre-line">{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground !whitespace-pre-line">{item.desc}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            )}
-          </div>
-
-          <div className="text-center">
-            <Link href="/about">
-              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background !whitespace-pre-line">
-                <ArrowRight className="ml-2" size={18} />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Projects */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
@@ -518,6 +463,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>);
-
+    </>
+  );
 }
