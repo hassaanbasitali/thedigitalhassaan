@@ -1,8 +1,8 @@
-import { Mail, Phone, Linkedin, Github, Twitter } from "lucide-react"
-import Link from "next/link"
+import { Mail, Phone, Linkedin, Github, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-card border-t border-border mt-20">
@@ -23,8 +23,8 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
-                aria-label="LinkedIn"
-              >
+                aria-label="LinkedIn">
+
                 <Linkedin size={18} />
               </a>
               <a
@@ -32,8 +32,8 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
-                aria-label="GitHub"
-              >
+                aria-label="GitHub">
+
                 <Github size={18} />
               </a>
               <a
@@ -41,8 +41,8 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
-                aria-label="Twitter"
-              >
+                aria-label="Twitter">
+
                 <Twitter size={18} />
               </a>
             </div>
@@ -87,8 +87,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={16} className="text-[#39FF14]" />
-                <a href="tel:+1234567890" className="hover:text-[#39FF14] transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+1234567890" className="hover:text-[#39FF14] transition-colors">+92 300 1181 588
+
                 </a>
               </li>
             </ul>
@@ -100,6 +100,6 @@ export function Footer() {
           <p>© {currentYear} Hassaan Basit. All rights reserved. Built with passion and <span className="text-[#39FF14]">Electric Green</span>.</p>
         </div>
       </div>
-    </footer>
-  )
+    </footer>);
+
 }
