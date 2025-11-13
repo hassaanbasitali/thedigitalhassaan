@@ -192,8 +192,8 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-foreground">
               MY CORE PRINCIPLES
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground font-light">
-              This is the commitment and value I bring to every client partnership. It's what separates my architectural approach from everyone else.
+            <p className="text-lg md:text-xl text-muted-foreground font-light">This is the commitment and value I bring to every client project. It's what separates my architectural approach from everyone else.
+
             </p>
             
             {/* Swipe Icon Indicator */}
