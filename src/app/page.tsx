@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/Footer";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const projects = [
 {
@@ -58,10 +58,64 @@ const testimonials = [
   rating: 5
 }];
 
+const corePrinciples = [
+  {
+    number: "01.",
+    title: "The All-in-One Engine",
+    description: "Instead of scattered parts, I build your entire digital ecosystem. A single, unified system where every component works in perfect harmony."
+  },
+  {
+    number: "02.",
+    title: "A Strategic Foundation",
+    description: "Every project begins with a deep-dive analysis. We don't guess; we architect a data-driven blueprint for your success."
+  },
+  {
+    number: "03.",
+    title: "A Relentless Focus on ROI",
+    description: "My ultimate goal is your growth. I am obsessed with tracking performance and ensuring that your investment yields a real, measurable financial return."
+  },
+  {
+    number: "04.",
+    title: "A Single, Dedicated Partner",
+    description: "You get one point of contact and one person who takes full responsibility for the project's success, saving you time and eliminating agency headaches."
+  },
+  {
+    number: "05.",
+    title: "Sustainable, Scalable Systems",
+    description: "I don't just run campaigns; I build the organized systems and processes that allow your business to manage and scale its success long-term."
+  }
+];
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollContainerRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollContainerRef.current.offsetLeft);
+    setScrollLeft(scrollContainerRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollContainerRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -121,6 +175,83 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
+      </section>
+
+      {/* MY CORE PRINCIPLES Section */}
+      <section className="py-20 px-6 bg-card overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="container mx-auto">
+          
+          {/* Section Header */}
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-foreground">
+              MY CORE PRINCIPLES
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground font-light">
+              This is the commitment and value I bring to every client partnership. It's what separates my architectural approach from everyone else.
+            </p>
+          </div>
+
+          {/* Horizontal Scrolling Carousel */}
+          <div 
+            ref={scrollContainerRef}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseLeave}
+            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 cursor-grab active:cursor-grabbing select-none"
+            style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch'
+            }}>
+            
+            {/* Spacer to center first card */}
+            <div className="flex-shrink-0 w-6 md:w-12" />
+            
+            {corePrinciples.map((principle, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
+                
+                <div className="bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)]">
+                  {/* Number */}
+                  <div className="text-6xl md:text-7xl font-bold mb-6" style={{ color: 'rgba(255, 255, 255, 0.2)' }}>
+                    {principle.number}
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+                    {principle.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-base md:text-lg font-light leading-relaxed" style={{ color: '#E5E5E5' }}>
+                    {principle.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+            
+            {/* Spacer to show partial card on right */}
+            <div className="flex-shrink-0 w-6 md:w-12" />
+          </div>
+
+          {/* Scroll Hint */}
+          <div className="text-center mt-8">
+            <p className="text-sm text-muted-foreground">
+              ← Drag or swipe to explore all principles →
+            </p>
+          </div>
+        </motion.div>
       </section>
 
       {/* About Me Section */}
@@ -394,6 +525,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>);
-
+    </>
+  );
 }
