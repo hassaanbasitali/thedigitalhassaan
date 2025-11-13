@@ -20,7 +20,7 @@ const projects = [
   results: "+70% organic traffic"
 },
 {
-  title: "DUA Construction",
+  title: "Dua Construction Services",
   description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
   image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
   link: "/projects/dua-construction",
