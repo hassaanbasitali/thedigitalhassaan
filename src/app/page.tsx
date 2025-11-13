@@ -268,7 +268,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
-            { icon: "", title: "Strategic Thinking", desc: "" },
+            { icon: "", title: "", desc: "" },
             { icon: "", title: "Technical Excellence", desc: "Modern, scalable, performant solutions" },
             { icon: "", title: "Growth Focus", desc: "Measurable results that move the needle" }].
             map((item, i) =>
