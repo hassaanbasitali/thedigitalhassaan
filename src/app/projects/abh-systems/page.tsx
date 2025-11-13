@@ -55,7 +55,7 @@ export default function ABHSystemsCase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative h-[500px] rounded-2xl overflow-hidden border-4 border-[#39FF14]"
+            className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop"
