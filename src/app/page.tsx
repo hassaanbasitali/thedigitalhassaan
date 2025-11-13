@@ -244,13 +244,6 @@ export default function Home() {
             {/* Spacer to show partial card on right */}
             <div className="flex-shrink-0 w-6 md:w-12" />
           </div>
-
-          {/* Scroll Hint */}
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground">
-              ← Drag or swipe to explore all principles →
-            </p>
-          </div>
         </motion.div>
       </section>
 
