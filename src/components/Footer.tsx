@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-foreground">thedigital</span>
+              <span className="text-foreground !whitespace-pre-line">thedigital</span>
               <span className="text-[#39FF14]"> Basit</span>
             </h3>
             <p className="text-muted-foreground mb-4">
