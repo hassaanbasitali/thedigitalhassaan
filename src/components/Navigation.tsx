@@ -38,8 +38,8 @@ export function Navigation() {
 
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-[#39FF14] flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-[#39FF14] flex-shrink-0">
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1763069686185.jpg?width=8000&height=8000&resize=contain"
                 alt="Hassaan Logo"
@@ -47,7 +47,7 @@ export function Navigation() {
                 className="object-cover"
               />
             </div>
-            <div className="text-2xl font-bold">
+            <div className="text-lg sm:text-xl md:text-2xl font-bold">
               <span className="text-foreground transition-colors group-hover:text-[#39FF14]">digital</span>
               <span className="text-[#39FF14]">hassaan</span>
             </div>
