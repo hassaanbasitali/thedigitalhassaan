@@ -3,10 +3,8 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Code, Palette, Search, BarChart, Zap, Database } from "lucide-react"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Footer } from "@/components/Footer"
-import Image from "next/image"
 
 const skillCategories = [
   {
@@ -80,45 +78,6 @@ const skillCategories = [
       { name: "ROI Optimization", level: 90 }
     ],
     color: "#39FF14"
-  }
-]
-
-const toolkitSections = [
-  {
-    title: "Development Tools",
-    tools: [
-      { name: "Next.js", logo: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=100&h=100&fit=crop" },
-      { name: "React", logo: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=100&h=100&fit=crop" },
-      { name: "TypeScript", logo: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=100&h=100&fit=crop" },
-      { name: "Tailwind CSS", logo: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=100&h=100&fit=crop" }
-    ]
-  },
-  {
-    title: "Design Tools",
-    tools: [
-      { name: "Figma", logo: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=100&h=100&fit=crop" },
-      { name: "Adobe XD", logo: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=100&h=100&fit=crop" },
-      { name: "Sketch", logo: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=100&h=100&fit=crop" },
-      { name: "Photoshop", logo: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop" }
-    ]
-  },
-  {
-    title: "Marketing & SEO",
-    tools: [
-      { name: "Google Analytics", logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop" },
-      { name: "SEMrush", logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100&h=100&fit=crop" },
-      { name: "Ahrefs", logo: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=100&h=100&fit=crop" },
-      { name: "HubSpot", logo: "https://images.unsplash.com/photo-1557838923-2985c318be48?w=100&h=100&fit=crop" }
-    ]
-  },
-  {
-    title: "Infrastructure & Deployment",
-    tools: [
-      { name: "Vercel", logo: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=100&h=100&fit=crop" },
-      { name: "AWS", logo: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=100&h=100&fit=crop" },
-      { name: "Docker", logo: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=100&h=100&fit=crop" },
-      { name: "GitHub", logo: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=100&h=100&fit=crop" }
-    ]
   }
 ]
 
@@ -236,60 +195,6 @@ export default function SkillsPage() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Technical Toolkit */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Technical <span className="text-[#39FF14]">Toolkit</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              The tools and technologies I use to build world-class digital ecosystems
-            </p>
-          </motion.div>
-
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {toolkitSections.map((section, index) => (
-              <AccordionItem key={index} value={`toolkit-${index}`} className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-[#39FF14]">
-                  {section.title}
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
-                    {section.tools.map((tool, toolIndex) => (
-                      <motion.div
-                        key={toolIndex}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: toolIndex * 0.05 }}
-                        className="flex flex-col items-center gap-3 p-4 rounded-lg bg-card hover:border-[#39FF14] border border-transparent transition-colors"
-                      >
-                        <div className="relative w-16 h-16 rounded-lg overflow-hidden">
-                          <Image
-                            src={tool.logo}
-                            alt={tool.name}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <span className="text-sm font-medium text-center">{tool.name}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </div>
       </section>
 
