@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send } from "lucide-react";
+import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send, Instagram, Facebook, Linkedin, Globe } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -402,6 +402,41 @@ export default function Home() {
                   <div>
                     <p className="font-semibold text-foreground">Location</p>
                     <p className="text-muted-foreground">Available Globally</p>
+                  </div>
+                </div>
+
+                {/* Social Media Links */}
+                <div className="pt-6">
+                  <p className="font-semibold text-foreground mb-4">Connect With Me</p>
+                  <div className="flex items-center gap-3">
+                    <a 
+                      href="https://www.instagram.com/thedigitalhassaan/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <Instagram className="text-[#39FF14]" size={20} />
+                    </a>
+                    <a 
+                      href="https://www.facebook.com/thedigitalhassaan/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <Facebook className="text-[#39FF14]" size={20} />
+                    </a>
+                    <a 
+                      href="https://www.linkedin.com/in/thedigitalhassaan/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <Linkedin className="text-[#39FF14]" size={20} />
+                    </a>
+                    <a 
+                      href="https://www.fiverr.com/hassaanbasit/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <Globe className="text-[#39FF14]" size={20} />
+                    </a>
                   </div>
                 </div>
               </div>
