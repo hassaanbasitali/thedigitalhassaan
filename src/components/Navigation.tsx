@@ -38,7 +38,7 @@ export function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold group">
-            <span className="text-foreground transition-colors group-hover:text-[#39FF14] !whitespace-pre-line !w-[111px] !h-[38px]">digital
+            <span className="text-foreground transition-colors group-hover:text-[#39FF14] !whitespace-pre-line !w-[111px] !h-[38px] !whitespace-pre-line">digital
 
             </span>
             <span className="text-[#39FF14] !whitespace-pre-line">hassaan</span>
