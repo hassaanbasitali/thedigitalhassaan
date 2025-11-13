@@ -85,10 +85,10 @@ export default function Home() {
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Digital Growth
-                <span className="text-white"> Architect</span>
+                <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses 
-
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+                I don't just build websites. I architect complete digital ecosystems that drive measurable business growth for service based businesses
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services">
@@ -110,21 +110,14 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative">
 
-              <motion.div
-                animate={{ rotateY: [0, 360] }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="relative w-full aspect-square max-w-md mx-auto"
-                style={{ transformStyle: "preserve-3d" }}>
-
+              <div className="relative w-full aspect-square max-w-md mx-auto">
                 <Image
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=8000&height=8000&resize=contain"
                   alt="Hassaan Basit"
                   fill
-                  className="rounded-2xl object-cover shadow-2xl border-4 border-[#39FF14]"
+                  className="rounded-2xl object-cover shadow-2xl"
                   priority />
-
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#39FF14]/20 to-transparent" />
-              </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>

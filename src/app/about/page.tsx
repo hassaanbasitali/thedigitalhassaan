@@ -157,9 +157,7 @@ export default function AboutPage() {
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Secondary-Image-1762817919635.jpg?width=8000&height=8000&resize=contain"
                   alt="Hassaan Basit"
                   fill
-                  className="rounded-2xl object-cover shadow-2xl border-4 border-[#39FF14]" />
-
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#39FF14]/20 to-transparent" />
+                  className="rounded-2xl object-cover shadow-2xl" />
               </div>
             </motion.div>
           </div>
