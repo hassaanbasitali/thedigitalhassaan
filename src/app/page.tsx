@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send, Instagram, Facebook, Linkedin, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send, Instagram, Facebook, Linkedin, Globe, MoveHorizontal } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -93,6 +93,7 @@ export default function Home() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [activePrincipleIndex, setActivePrincipleIndex] = useState<number | null>(null);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollContainerRef.current) return;
@@ -194,6 +195,12 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground font-light">
               This is the commitment and value I bring to every client partnership. It's what separates my architectural approach from everyone else.
             </p>
+            
+            {/* Swipe Icon Indicator */}
+            <div className="flex items-center justify-center gap-2 mt-8 text-[#39FF14] animate-pulse">
+              <MoveHorizontal size={24} />
+              <span className="text-sm font-medium">Swipe to explore</span>
+            </div>
           </div>
 
           {/* Horizontal Scrolling Carousel */}
@@ -222,7 +229,16 @@ export default function Home() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
                 
-                <div className="bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)]">
+                <div 
+                  className={`bg-[#1A1A1A] rounded-[24px] p-8 md:p-12 h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(57,255,20,0.3)] ${
+                    activePrincipleIndex === i ? '-translate-y-2 shadow-[0_0_30px_rgba(57,255,20,0.3)]' : ''
+                  }`}
+                  onTouchStart={() => setActivePrincipleIndex(i)}
+                  onTouchEnd={() => setTimeout(() => setActivePrincipleIndex(null), 300)}
+                  onClick={() => {
+                    setActivePrincipleIndex(i);
+                    setTimeout(() => setActivePrincipleIndex(null), 300);
+                  }}>
                   {/* Number */}
                   <div className="text-6xl md:text-7xl font-bold mb-6" style={{ color: 'rgba(255, 255, 255, 0.2)' }}>
                     {principle.number}
