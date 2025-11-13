@@ -44,7 +44,7 @@ const testimonials = [
   rating: 5
 },
 {
-  name: "Michael Chen",
+  name: "Zain Ul Arifeen",
   role: "Founder, DUA Construction",
   content: "Working with Hassaan was transformative. He understood our business deeply and created a digital ecosystem that actually drives growth. We're seeing 50+ qualified leads every month now.",
   avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
