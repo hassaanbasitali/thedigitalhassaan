@@ -355,7 +355,7 @@ export default function Home() {
 
                       <div>
                         <CardTitle className="text-lg !whitespace-pre-line text-foreground !whitespace-pre-line">{testimonial.name}</CardTitle>
-                        <CardDescription className="text-muted-foreground">{testimonial.role}</CardDescription>
+                        <CardDescription className="text-muted-foreground !whitespace-pre-line">{testimonial.role}</CardDescription>
                       </div>
                     </div>
                     <div className="flex gap-1">
