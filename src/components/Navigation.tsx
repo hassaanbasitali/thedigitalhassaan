@@ -48,7 +48,7 @@ export function Navigation() {
 
             </div>
             <div className="text-lg sm:text-xl md:text-2xl font-bold">
-              <span className="text-foreground transition-colors group-hover:text-[#39FF14]">thedigital</span>
+              <span className="text-foreground transition-colors group-hover:text-[#39FF14] !whitespace-pre-line">thedigital</span>
               <span className="text-[#39FF14]">hassaan</span>
             </div>
           </Link>
