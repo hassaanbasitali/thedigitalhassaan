@@ -44,11 +44,11 @@ export function Navigation() {
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1763069686185.jpg?width=8000&height=8000&resize=contain"
                 alt="Hassaan Logo"
                 fill
-                className="object-cover"
-              />
+                className="object-cover" />
+
             </div>
             <div className="text-lg sm:text-xl md:text-2xl font-bold">
-              <span className="text-foreground transition-colors group-hover:text-[#39FF14]">digital</span>
+              <span className="text-foreground transition-colors group-hover:text-[#39FF14]">thedigital</span>
               <span className="text-[#39FF14]">hassaan</span>
             </div>
           </Link>
