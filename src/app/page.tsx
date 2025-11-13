@@ -142,7 +142,7 @@ export default function Home() {
                 Digital Growth
                 <span className="text-[#39FF14]"> Architect</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">I create interconnected Digital Ecosystems for service-based businesses, engineered to increase their sales and client acquisition.
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I create interconnected Digital Ecosystems for service-based businesses, engineered to increase their sales and client acquisition.
 
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
