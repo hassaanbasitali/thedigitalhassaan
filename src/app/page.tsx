@@ -354,7 +354,7 @@ export default function Home() {
                       className="rounded-full" />
 
                       <div>
-                        <CardTitle className="text-lg !whitespace-pre-line text-foreground">{testimonial.name}</CardTitle>
+                        <CardTitle className="text-lg !whitespace-pre-line text-foreground !whitespace-pre-line">{testimonial.name}</CardTitle>
                         <CardDescription className="text-muted-foreground">{testimonial.role}</CardDescription>
                       </div>
                     </div>
