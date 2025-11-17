@@ -97,23 +97,18 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                I Build
-                <span className="text-[#39FF14]"> Ecosystems</span>,
-                Not Just Websites
+                You Can't Build an
+                <span className="text-[#39FF14]"> Engine</span> with Scattered Parts.
               </h1>
-              <p className="text-xl text-muted-foreground mb-6">
-                Most web developers build websites. I architect complete digital ecosystems that drive measurable business growth.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8">
-                With years of experience across web development, digital marketing, SEO, and business strategy, 
-                I bring a unique holistic approach that most specialists simply can't offer.
+              <p className="text-xl text-muted-foreground mb-8 font-light">
+                What makes my approach different is my perspective. I don't see myself as a freelancer you hire for a task; I see myself as your dedicated growth architect. Think about the cost and complexity of hiring a separate strategist, a web developer, and an ad manager—it's a full-time job just to keep them in sync. As your single, expert partner, I handle all of that. The process is simpler, more cost-effective, and frees you to focus on running your business, not chasing your marketing.
               </p>
               <div className="space-y-4">
                 {[
-                "Strategic thinker with technical execution skills",
-                "Business growth focus, not just pretty designs",
-                "Full-stack capabilities across the digital spectrum",
-                "Proven track record of delivering measurable results"].
+                "A Strategic Architect, Not Just a Marketer.",
+                "A Relentless Focus on Your Revenue & ROI.",
+                "One Cohesive System, Not Scattered Parts.",
+                "A True Partner Committed to Your Success."].
                 map((item, i) =>
                 <motion.div
                   key={i}
@@ -122,8 +117,8 @@ export default function AboutPage() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="flex items-center gap-3">
 
-                    <CheckCircle className="text-[#39FF14] flex-shrink-0" size={24} />
-                    <span className="text-foreground">{item}</span>
+                    <CheckCircle className="text-[#39FF14] flex-shrink-0" size={24} fill="#39FF14" />
+                    <span className="text-foreground font-light">{item}</span>
                   </motion.div>
                 )}
               </div>
