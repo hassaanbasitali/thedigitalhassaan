@@ -200,11 +200,10 @@ export default function ServicesPage() {
                   Full Digital <span className="text-[#39FF14]">Ecosystem</span>
                 </h2>
                 <p className="text-xl text-muted-foreground mb-6">
-                  The complete solution for businesses serious about digital growth
+                  This is my all-in-one, flagship service for businesses ready for a complete growth partner. It combines every single one of my expert services into a single, cohesive, and professionally managed system designed for maximum results.
                 </p>
                 <div className="flex items-baseline gap-2 mb-8">
-                  <span className="text-5xl font-bold text-[#39FF14]">$25,000+</span>
-                  <span className="text-muted-foreground">investment</span>
+                  <span className="text-5xl font-bold text-[#39FF14]">$1000</span>
                 </div>
               </div>
 
@@ -263,7 +262,7 @@ export default function ServicesPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" className="flex-1">
                     <Button size="lg" className="w-full bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold">
-                      Get Started Today <ArrowRight className="ml-2" size={20} />
+                      Book a Discovery Call <ArrowRight className="ml-2" size={20} />
                     </Button>
                   </Link>
                   <Button size="lg" variant="outline" className="flex-1 border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-black">
