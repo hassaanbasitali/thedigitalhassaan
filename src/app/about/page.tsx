@@ -255,30 +255,30 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={index === 4 ? "md:col-span-2 lg:col-span-1" : ""}>
 
-                <Card 
-                  className={`h-full hover:border-[#39FF14] transition-all duration-300 group`}
-                  style={{ 
-                    backgroundColor: item.color,
-                    borderColor: item.color === "#39FF14" ? "#39FF14" : undefined
-                  }}>
+                <Card
+                className={`h-full hover:border-[#39FF14] transition-all duration-300 group`}
+                style={{
+                  backgroundColor: item.color,
+                  borderColor: item.color === "#39FF14" ? "#39FF14" : undefined
+                }}>
                   <CardHeader>
                     <div className="flex items-center justify-between mb-4">
-                      <span 
-                        className="text-4xl font-bold opacity-50 group-hover:opacity-100 transition-opacity"
-                        style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#39FF14" }}>
+                      <span
+                      className="text-4xl font-bold opacity-50 group-hover:opacity-100 transition-opacity"
+                      style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#39FF14" }}>
                         {item.step}
                       </span>
                     </div>
-                    <CardTitle 
-                      className="text-xl group-hover:text-[#39FF14] transition-colors"
-                      style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#FFFFFF" }}>
+                    <CardTitle
+                    className="text-xl group-hover:text-[#39FF14] transition-colors"
+                    style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#FFFFFF" }}>
                       {item.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription 
-                      className="text-base"
-                      style={{ color: item.color === "#F5F5F5" ? "#666666" : item.color === "#39FF14" ? "#000000" : "#A3A3A3" }}>
+                    <CardDescription
+                    className="text-base"
+                    style={{ color: item.color === "#F5F5F5" ? "#666666" : item.color === "#39FF14" ? "#000000" : "#A3A3A3" }}>
                       {item.description}
                     </CardDescription>
                   </CardContent>
@@ -300,7 +300,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
-              { icon: <Users size={40} />, value: "50+", label: "Happy Clients" },
+              { icon: <Users size={40} />, value: "20+", label: "Happy Clients" },
               { icon: <TrendingUp size={40} />, value: "340%", label: "Avg Traffic Increase" },
               { icon: <CheckCircle size={40} />, value: "100+", label: "Projects Completed" },
               { icon: <Zap size={40} />, value: "5", label: "Years Experience" }].
