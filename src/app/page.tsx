@@ -14,21 +14,21 @@ import { useState, useRef } from "react";
 const projects = [
 {
   title: "Plus Accountants",
-  description: "Complete digital transformation with brand refresh, website rebuild, and marketing automation",
+  description: "A complete digital ecosystem build that reactivated a dormant client base and doubled monthly revenue.",
   image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
   link: "/projects/plus-accountants",
   results: "+70% organic traffic"
 },
 {
   title: "Dua Construction Services",
-  description: "Multi-phase ecosystem build driving qualified lead generation and brand authority",
+  description: "Architecting a lead generation system that secured two major, high-value construction contracts.",
   image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
   link: "/projects/dua-construction",
   results: "12+ qualified leads/month"
 },
 {
   title: "ABH Systems Pvt Ltd",
-  description: "Strategic positioning pivot with ecosystem development for B2B lead generation",
+  description: "A hyper-efficient brand launch that delivered exceptional ROI and immediate market traction.",
   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
   link: "/projects/abh-systems",
   results: "$180K pipeline in 90 days"
@@ -39,22 +39,22 @@ const testimonials = [
 {
   name: "Muhammad Kamran",
   role: "CEO, Plus Accountants",
-  content: "Hassaan didn't just build us a website - he architected an entire growth system. The results speak for themselves: 340% increase in organic traffic and qualified leads flowing in consistently.",
-  avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+  content: "Before Hassaan, our digital marketing was non-existent. He came in with a clear, methodical plan and built a complete system from the ground up. He didn't just get us new followers; he re-engaged our old clients and created a predictable way to get new ones. The best part? Our revenue doubled, and the system he built is something my own team can now easily manage.",
+  avatar: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-ce36087c-20251117213325.jpg",
   rating: 5
 },
 {
   name: "Zain Ul Arifeen",
   role: "Founder, Dua Construction Services",
-  content: "Working with Hassaan was transformative. He understood our business deeply and created a digital ecosystem that actually drives growth. We're seeing 50+ qualified leads every month now.",
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+  content: "I was skeptical that 'digital marketing' would work for a construction business like ours. Hassaan took our inconsistent social media and lack of professional materials and completely transformed our image. The company profile he created and the strategy he implemented made us look credible and professional, which is everything in this industry. The results are real—we closed two huge deals directly because of the system he put in place.",
+  avatar: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-2f66ceb7-20251117213325.jpg",
   rating: 5
 },
 {
   name: "Akbar Ali",
   role: "CEO, ABH Systems Pvt Ltd",
-  content: "Hassaan's strategic approach is unmatched. He positioned us perfectly in the market and built systems that generated $180K in pipeline within 90 days. Incredible ROI.",
-  avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+  content: "We were a new brand launching on a very tight budget. What impressed me most about Hassaan was his efficiency—he didn't waste a single rupee. He built our entire brand and got us making sales almost immediately. To get over 35 sales in our first two months with such a tiny ad spend is incredible. He's incredibly efficient with capital. The return on our small investment was outstanding.",
+  avatar: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-cbbb102d-20251117213325.jpg",
   rating: 5
 }];
 
@@ -273,11 +273,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground !whitespace-pre-line !whitespace-pre-line !font-(family-name:--font-poppins)">{`Case Studies\n\n`}
-
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              Client Success Stories
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto !whitespace-pre-line">
-
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+              Don't just take my word for it. These projects are more than just a portfolio—they're stories of partnership, strategy, and what happens when we build the right system.
             </p>
           </motion.div>
 
@@ -300,7 +300,7 @@ export default function Home() {
                       className="object-cover group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground !whitespace-pre-line !whitespace-pre-line">{project.title}</CardTitle>
+                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
                       <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -327,7 +327,7 @@ export default function Home() {
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Client <span className="text-[#39FF14]">Success Stories</span>
+              Real Words from Real <span className="text-[#39FF14]">Partners</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Don't just take my word for it. Here's what my clients say.
@@ -354,8 +354,8 @@ export default function Home() {
                       className="rounded-full" />
 
                       <div>
-                        <CardTitle className="text-lg !whitespace-pre-line text-foreground !whitespace-pre-line !whitespace-pre-line">{testimonial.name}</CardTitle>
-                        <CardDescription className="text-muted-foreground !whitespace-pre-line !whitespace-pre-line">{testimonial.role}</CardDescription>
+                        <CardTitle className="text-lg text-foreground">{testimonial.name}</CardTitle>
+                        <CardDescription className="text-muted-foreground">{testimonial.role}</CardDescription>
                       </div>
                     </div>
                     <div className="flex gap-1">
