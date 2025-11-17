@@ -276,7 +276,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground !whitespace-pre-line">Client Success Stories
 
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto !whitespace-pre-line">
 
             </p>
           </motion.div>
