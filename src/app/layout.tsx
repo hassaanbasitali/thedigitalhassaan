@@ -4,6 +4,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
+import { FloatingContactBar } from "@/components/FloatingContactBar";
 
 export const metadata: Metadata = {
   title: "Hassaan Basit | Digital Growth Architect",
@@ -30,6 +31,7 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
         <Navigation />
+        <FloatingContactBar />
         <main className="page-transition">
           {children}
         </main>
