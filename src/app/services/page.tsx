@@ -9,108 +9,98 @@ import { Footer } from "@/components/Footer"
 
 const alacarte = [
   {
-    title: "Website Design & Development",
-    price: "From $5,000",
-    description: "Custom, high-converting websites built with modern technologies",
+    title: "Market Research Blueprint",
+    price: "$100",
     features: [
-      "Responsive design for all devices",
-      "SEO-optimized structure",
-      "Fast loading speeds",
-      "Content management system",
-      "Analytics integration",
-      "30 days of support"
-    ]
+      "In-depth Market Analysis & Comprehensive Report",
+      "Detailed Target Audience Persona & Analysis",
+      "Curated List of Key Competitors",
+      "Forensic Competitor Analysis & Strategic Insights",
+      "Actionable Recommendations to Differentiate Your Brand",
+      "Data-Driven Platform Identification"
+    ],
+    deliverable: "A clear understanding of your market landscape, delivered via a comprehensive report, Excel database, and a professional visual presentation."
   },
   {
-    title: "Brand Identity & Strategy",
-    price: "From $3,000",
-    description: "Complete brand development from positioning to visual identity",
+    title: "Digital Presence Audit",
+    price: "$100",
     features: [
-      "Market research & positioning",
-      "Logo & visual identity design",
-      "Brand guidelines document",
-      "Marketing collateral design",
-      "Brand voice & messaging",
-      "Competitor analysis"
-    ]
+      "Full Audit of Your Current Digital Strategy",
+      "Honest, Unbiased Evaluation of Strengths & Weaknesses",
+      "A Clear, Prioritized Action Plan for Improvement",
+      "Strategic Recommendations for Immediate Impact"
+    ],
+    deliverable: "A complete understanding of what to fix, presented in a clear roadmap to increase your sales and impact."
   },
   {
-    title: "SEO & Content Strategy",
-    price: "From $2,500/mo",
-    description: "Comprehensive SEO strategy to drive organic traffic and rankings",
+    title: "Brand Identity Kit",
+    price: "$150",
     features: [
-      "Technical SEO audit & fixes",
-      "Keyword research & strategy",
-      "On-page optimization",
-      "Content calendar creation",
-      "Link building strategy",
-      "Monthly performance reports"
-    ]
+      "Comprehensive Audit of Your Existing Brand",
+      "Crafting Your Core Brand Messaging & Story",
+      "Development of 2 Unique Logo Concepts",
+      "Creation of 2 Professional Color Palettes",
+      "Selection of 2 Professional Font Pairings",
+      "A Suite of 5 High-Fidelity Brand Mockups"
+    ],
+    deliverable: "A complete, ready-to-use professional Brand Kit with all visual assets and a comprehensive presentation."
   },
   {
-    title: "Marketing Automation Setup",
-    price: "From $4,000",
-    description: "Automated systems for lead generation, nurturing, and conversion",
+    title: "Custom Growth Strategy",
+    price: "$150",
     features: [
-      "Email marketing automation",
-      "CRM integration",
-      "Lead capture forms",
-      "Automated workflows",
-      "Analytics & tracking",
-      "Training & documentation"
-    ]
+      "In-depth Discovery Session to Understand Your Business",
+      "A Custom-Tailored Strategic Solution for Your Unique Problems"
+    ],
+    deliverable: "An experienced, personalized strategy document that provides a clear and actionable roadmap for your business growth."
   },
   {
-    title: "E-commerce Development",
-    price: "From $8,000",
-    description: "Full-featured online stores optimized for conversions",
+    title: "Organic Social Media Marketing",
+    price: "$200",
     features: [
-      "Product catalog setup",
-      "Payment gateway integration",
-      "Inventory management",
-      "Order processing system",
-      "Customer account portal",
-      "Mobile-optimized checkout"
-    ]
+      "Full Audit & Strategy for 3 Social Platforms (Excluding LinkedIn)",
+      "Professional Account Creation & Optimization",
+      "Complete Profile Visuals (Profile Image & Banner)",
+      "A Content Calendar of 20 High-Engagement Posts",
+      "Expertly Researched Captions & Trending Hashtags",
+      "Full Content Scheduling Across All Platforms"
+    ],
+    deliverable: "A professional and active social media presence with 20 days of high-end content, managed for you."
   },
   {
-    title: "Performance Optimization",
-    price: "From $2,000",
-    description: "Speed up your website and improve user experience",
+    title: "WordPress Website Development",
+    price: "$200 (Hosting & Domain Not Included)",
     features: [
-      "Site speed audit",
-      "Image optimization",
-      "Code minification",
-      "CDN implementation",
-      "Core Web Vitals optimization",
-      "Performance monitoring"
-    ]
+      "A Professional 6-7 Page Modern Minimalist Website",
+      "Highly Interactive & Smooth User Experience",
+      "Full Social Media & WhatsApp Integration",
+      "Expertly Written SEO-Optimized Foundational Content"
+    ],
+    deliverable: "A professional website that acts as your 24/7 digital salesperson."
   },
   {
-    title: "Analytics & Reporting",
-    price: "From $1,500/mo",
-    description: "Data-driven insights to guide your business decisions",
+    title: "LinkedIn Authority Builder",
+    price: "$180",
     features: [
-      "Analytics setup & configuration",
-      "Custom dashboard creation",
-      "Monthly performance reports",
-      "Conversion tracking",
-      "User behavior analysis",
-      "Strategic recommendations"
-    ]
+      "Complete Personal & Company Profile Architecture",
+      "Optimization of all Key Sections",
+      "A Content Plan of 10 Image Posts, 10 Written Posts, 3 Articles, & 2 PDF Carousels",
+      "Strategic Network Growth (150+ Connections & 200+ Invites)",
+      "Proactive Engagement & Interaction Messaging"
+    ],
+    deliverable: "A powerful, professional LinkedIn presence for both you and your company, perfectly positioned to attract high-value B2B clients."
   },
   {
-    title: "Consultation & Strategy",
-    price: "$500/session",
-    description: "Expert guidance on your digital growth strategy",
+    title: "Social Media Management & Ads (1 Month)",
+    price: "$350",
     features: [
-      "90-minute strategy session",
-      "Personalized action plan",
-      "Competitive analysis",
-      "Growth opportunity identification",
-      "Technology recommendations",
-      "Follow-up support via email"
-    ]
+      "Full Management for Meta (Facebook/Instagram) & Twitter",
+      "A Content Plan of 30 Posts, 10 Stories, & 2 Edited Reels/Animations",
+      "Full Profile Management",
+      "Comprehensive Weekly Performance Reports",
+      "A Complete Meta Ad Campaign: - 3 High-Performance Ad Creatives, - 3 High-Conversion Ad Copies, - 12 Days of Strategic A/B Testing & Optimization, - Delivery of 1 Winning Ad Campaign & Ad Set"
+    ],
+    deliverable: "A professionally managed social presence and a data-driven ad campaign designed to deliver exceptional results."
   }
 ]
 
@@ -170,7 +160,7 @@ export default function ServicesPage() {
                     <div className="text-2xl font-bold text-[#39FF14] my-2">
                       {service.price}
                     </div>
-                    <CardDescription>{service.description}</CardDescription>
+                    <CardDescription>{service.deliverable}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <ul className="space-y-2">
