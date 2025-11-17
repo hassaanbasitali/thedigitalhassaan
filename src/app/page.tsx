@@ -277,7 +277,7 @@ export default function Home() {
 
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real results from real businesses. See how I've helped companies transform their digital presence.
+
             </p>
           </motion.div>
 
