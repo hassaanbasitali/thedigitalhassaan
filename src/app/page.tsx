@@ -273,7 +273,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground !whitespace-pre-line !whitespace-pre-line">{`Case Studies\n\n`}
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground !whitespace-pre-line !whitespace-pre-line !font-(family-name:--font-poppins)">{`Case Studies\n\n`}
 
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto !whitespace-pre-line">
