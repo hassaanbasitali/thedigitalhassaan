@@ -97,7 +97,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          <p className="!whitespace-pre-line">© {currentYear} Hassaan Basit. All rights reserved.</p>
+          <p className="!whitespace-pre-line">© {currentYear} thedigitalhassaan. All rights reserved.</p>
         </div>
       </div>
     </footer>);
