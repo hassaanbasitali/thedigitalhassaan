@@ -303,7 +303,7 @@ export default function AboutPage() {
               { icon: <Users size={40} />, value: "20+", label: "Happy Clients" },
               { icon: <TrendingUp size={40} />, value: "340%", label: "Avg Traffic Increase" },
               { icon: <CheckCircle size={40} />, value: "15+", label: "Projects Completed" },
-              { icon: <Zap size={40} />, value: "5", label: "Years Experience" }].
+              { icon: <Zap size={40} />, value: "3+", label: "Years Experience" }].
               map((stat, i) =>
               <motion.div
                 key={i}
