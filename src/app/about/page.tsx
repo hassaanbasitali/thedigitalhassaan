@@ -316,7 +316,7 @@ export default function AboutPage() {
                   <div className="flex justify-center mb-4 text-[#39FF14]">
                     {stat.icon}
                   </div>
-                  <div className="text-4xl md:text-5xl font-bold mb-2 text-[#39FF14] !whitespace-pre-line">
+                  <div className="text-4xl md:text-5xl font-bold mb-2 text-[#39FF14] !whitespace-pre-line !whitespace-pre-line">
                     {stat.value}
                   </div>
                   <div className="text-muted-foreground font-medium">
