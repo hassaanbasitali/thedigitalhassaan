@@ -22,7 +22,7 @@ const projects = [
 {
   title: "Dua Construction Services",
   description: "Architecting a lead generation system that secured two major, high-value construction contracts.",
-  image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
+  image: "",
   link: "/projects/dua-construction",
   results: "12+ qualified leads/month"
 },
