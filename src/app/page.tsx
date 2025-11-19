@@ -15,7 +15,7 @@ const projects = [
 {
   title: "Plus Accountants",
   description: "A complete digital ecosystem build that reactivated a dormant client base and doubled monthly revenue.",
-  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+  image: "",
   link: "/projects/plus-accountants",
   results: "+70% organic traffic"
 },
