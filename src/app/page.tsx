@@ -297,7 +297,7 @@ export default function Home() {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300" />
+                      className="object-cover group-hover:scale-110 transition-transform duration-300 !bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/visual-edit-uploads/1763585632211-9dpt4ikfli.png)] !bg-cover !bg-center" />
                     </div>
                     <CardHeader>
                       <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
