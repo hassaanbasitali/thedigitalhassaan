@@ -10,30 +10,30 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/Footer";
 import { useState, useRef } from "react";
+import { toast } from "sonner";
 
 const projects = [
 {
   title: "Plus Accountants",
   description: "A complete digital ecosystem build that reactivated a dormant client base and doubled monthly revenue.",
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757916767.png?width=8000&height=8000&resize=contain",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757916767.png?width=800&height=600&resize=contain",
   link: "/projects/plus-accountants",
   results: "+70% organic traffic"
 },
 {
   title: "Dua Construction Services",
   description: "Architecting a lead generation system that secured two major, high-value construction contracts.",
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757910714.png?width=8000&height=8000&resize=contain",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757910714.png?width=800&height=600&resize=contain",
   link: "/projects/dua-construction",
   results: "12+ qualified leads/month"
 },
 {
   title: "ABH Systems Pvt Ltd",
   description: "A hyper-efficient brand launch that delivered exceptional ROI and immediate market traction.",
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Abh-Laptops-1763757892256.png?width=8000&height=8000&resize=contain",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Abh-Laptops-1763757892256.png?width=800&height=600&resize=contain",
   link: "/projects/abh-systems",
   results: "$180K pipeline in 90 days"
 }];
-
 
 const testimonials = [
 {
@@ -85,7 +85,6 @@ const corePrinciples = [
   description: "I don't just run campaigns; I build the organized systems and processes that allow your business to manage and scale its success long-term."
 }];
 
-
 export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -122,7 +121,7 @@ export default function Home() {
     e.preventDefault();
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    alert("Thank you! I'll get back to you soon.");
+    toast.success("Thank you! I'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
     setIsSubmitting(false);
   };
@@ -136,7 +135,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}>
+              transition={{ duration: 0.6, ease: "easeOut" }}>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
                 Digital Growth
@@ -145,34 +144,42 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I create interconnected Digital Ecosystems for service-based businesses, engineered to increase their sales and client acquisition.
 
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.5 }}>
                 <Link href="/services">
-                  <Button size="lg" className="bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold">
+                  <Button size="lg" className="bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)]">
                     View My Services <ArrowRight className="ml-2" size={20} />
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background">
+                  <Button size="lg" variant="outline" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-all duration-300 hover:scale-105">
                     Get In Touch
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               className="relative">
 
-              <div className="relative w-full aspect-square max-w-md mx-auto">
+              <motion.div 
+                className="relative w-full aspect-square max-w-md mx-auto"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}>
                 <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=8000&height=8000&resize=contain"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=600&height=600&resize=contain"
                   alt="Hassaan Basit"
                   fill
                   className="rounded-2xl object-cover shadow-2xl"
-                  priority />
-              </div>
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw" />
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -183,8 +190,8 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
           className="container mx-auto">
           
           {/* Section Header */}
@@ -217,7 +224,6 @@ export default function Home() {
               WebkitOverflowScrolling: 'touch'
             }}>
             
-            {/* Spacer to center first card */}
             <div className="flex-shrink-0 w-6 md:w-12" />
             
             {corePrinciples.map((principle, i) =>
@@ -226,7 +232,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[500px] lg:w-[600px]">
                 
                 <div
@@ -239,17 +245,14 @@ export default function Home() {
                   setActivePrincipleIndex(i);
                   setTimeout(() => setActivePrincipleIndex(null), 300);
                 }}>
-                  {/* Number */}
                   <div className="text-6xl md:text-7xl font-bold mb-6" style={{ color: 'rgba(255, 255, 255, 0.2)' }}>
                     {principle.number}
                   </div>
                   
-                  {/* Title */}
                   <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
                     {principle.title}
                   </h3>
                   
-                  {/* Description */}
                   <p className="text-base md:text-lg font-light leading-relaxed" style={{ color: '#E5E5E5' }}>
                     {principle.description}
                   </p>
@@ -257,7 +260,6 @@ export default function Home() {
               </motion.div>
             )}
             
-            {/* Spacer to show partial card on right */}
             <div className="flex-shrink-0 w-6 md:w-12" />
           </div>
         </motion.div>
@@ -269,8 +271,8 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5 }}
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -287,25 +289,28 @@ export default function Home() {
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}>
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              whileHover={{ y: -8 }}
+              className="transition-all duration-300">
 
                 <Link href={project.link}>
-                  <Card className="overflow-hidden hover:border-foreground/20 transition-all duration-300 group">
+                  <Card className="overflow-hidden hover:border-[#39FF14]/40 transition-all duration-300 group h-full hover:shadow-[0_0_30px_rgba(57,255,20,0.15)]">
                     <div className="relative h-48 overflow-hidden">
                       <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300 !bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/visual-edit-uploads/1763585632211-9dpt4ikfli.png)] !bg-cover !bg-center !p-0" />
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw" />
                     </div>
                     <CardHeader>
-                      <CardTitle className="group-hover:text-[#39FF14] transition-colors text-foreground">{project.title}</CardTitle>
+                      <CardTitle className="group-hover:text-[#39FF14] transition-colors duration-300 text-foreground">{project.title}</CardTitle>
                       <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <span className="text-foreground font-semibold flex items-center">
-                        View Case Study <ArrowRight className="ml-2" size={16} />
+                      <span className="text-foreground font-semibold flex items-center group-hover:text-[#39FF14] transition-colors duration-300">
+                        View Case Study <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
                       </span>
                     </CardContent>
                   </Card>
@@ -322,8 +327,8 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5 }}
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -340,10 +345,12 @@ export default function Home() {
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}>
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="transition-all duration-300">
 
-                <Card className="h-full">
+                <Card className="h-full hover:shadow-[0_0_20px_rgba(57,255,20,0.1)] transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-4 mb-4">
                       <Image
@@ -381,8 +388,8 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}>
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5 }}>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Let's Build Your
@@ -393,38 +400,45 @@ export default function Home() {
               </p>
               
               <div className="space-y-4">
-                {/* Social Media Links */}
                 <div className="pt-2">
                   <p className="font-semibold text-foreground mb-4">Connect With Me</p>
                   <div className="flex items-center gap-3">
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
                       href="https://www.instagram.com/thedigitalhassaan/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Instagram className="text-[#39FF14]" size={20} />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
                       href="https://www.facebook.com/thedigitalhassaan/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Facebook className="text-[#39FF14]" size={20} />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
                       href="https://www.linkedin.com/in/thedigitalhassaan/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Linkedin className="text-[#39FF14]" size={20} />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
                       href="https://www.fiverr.com/hassaanbasit/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
                       <Globe className="text-[#39FF14]" size={20} />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -433,10 +447,10 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}>
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5 }}>
 
-              <Card>
+              <Card className="hover:shadow-[0_0_30px_rgba(57,255,20,0.15)] transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-foreground">Send Me a Message</CardTitle>
                   <CardDescription className="text-muted-foreground">Fill out the form below and I'll get back to you within 24 hours.</CardDescription>
@@ -448,8 +462,8 @@ export default function Home() {
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        required />
-
+                        required
+                        className="transition-all duration-300 focus:border-[#39FF14]/50" />
                     </div>
                     <div>
                       <Input
@@ -457,8 +471,8 @@ export default function Home() {
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        required />
-
+                        required
+                        className="transition-all duration-300 focus:border-[#39FF14]/50" />
                     </div>
                     <div>
                       <Textarea
@@ -466,14 +480,13 @@ export default function Home() {
                         rows={5}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        required />
-
+                        required
+                        className="transition-all duration-300 focus:border-[#39FF14]/50" />
                     </div>
                     <Button
                       type="submit"
-                      className="w-full bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold"
+                      className="w-full bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)]"
                       disabled={isSubmitting}>
-
                       {isSubmitting ? "Sending..." : "Send Message"}
                       <Send className="ml-2" size={18} />
                     </Button>
