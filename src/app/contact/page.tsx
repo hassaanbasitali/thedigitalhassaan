@@ -87,7 +87,7 @@ export default function ContactPage() {
                       <p className="font-semibold mb-1">Email</p>
                       <a
                         href="mailto:hassaan@example.com"
-                        className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+                        className="text-muted-foreground hover:text-[#39FF14] transition-colors !whitespace-pre-line">
                         hassaanbasitali@gmail.com
 
                       </a>
