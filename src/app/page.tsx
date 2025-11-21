@@ -15,21 +15,21 @@ const projects = [
 {
   title: "Plus Accountants",
   description: "A complete digital ecosystem build that reactivated a dormant client base and doubled monthly revenue.",
-  image: "",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757916767.png?width=8000&height=8000&resize=contain",
   link: "/projects/plus-accountants",
   results: "+70% organic traffic"
 },
 {
   title: "Dua Construction Services",
   description: "Architecting a lead generation system that secured two major, high-value construction contracts.",
-  image: "",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757910714.png?width=8000&height=8000&resize=contain",
   link: "/projects/dua-construction",
   results: "12+ qualified leads/month"
 },
 {
   title: "ABH Systems Pvt Ltd",
   description: "A hyper-efficient brand launch that delivered exceptional ROI and immediate market traction.",
-  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Abh-Laptops-1763757892256.png?width=8000&height=8000&resize=contain",
   link: "/projects/abh-systems",
   results: "$180K pipeline in 90 days"
 }];
