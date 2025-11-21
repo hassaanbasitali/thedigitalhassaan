@@ -94,7 +94,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}>
+              transition={{ duration: 0.5 }}>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 You Can't Build an
@@ -114,7 +114,7 @@ export default function AboutPage() {
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
                   className="flex items-center gap-3">
 
                     <CheckCircle className="text-[#39FF14] flex-shrink-0" size={24} fill="#39FF14" />
@@ -127,15 +127,17 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.5 }}
               className="relative">
 
               <div className="relative w-full aspect-square max-w-md mx-auto">
                 <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Secondary-Image-1762817919635.jpg?width=8000&height=8000&resize=contain"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Secondary-Image-1762817919635.jpg?width=800&height=800&resize=contain"
                   alt="Hassaan Basit"
                   fill
-                  className="rounded-2xl object-cover shadow-2xl" />
+                  className="rounded-2xl object-cover shadow-2xl"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
             </motion.div>
           </div>
@@ -148,8 +150,8 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -160,12 +162,12 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}>
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}>
 
             <Accordion type="single" collapsible className="w-full space-y-4">
               {architectAdvantage.map((item, index) =>
-              <AccordionItem key={index} value={`advantage-${index}`} className="border-2 border-border rounded-lg px-6 hover:border-[#39FF14] transition-colors">
+              <AccordionItem key={index} value={`advantage-${index}`} className="border-2 border-border rounded-lg px-6 hover:border-[#39FF14] transition-colors duration-200">
                   <AccordionTrigger className="text-left text-lg md:text-xl font-bold hover:text-[#39FF14] py-6">
                     <span className="flex items-center gap-4">
                       <span className="text-[#39FF14] text-2xl font-bold">{item.number}.</span>
@@ -188,8 +190,8 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -203,13 +205,13 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}>
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}>
 
             <Accordion type="single" collapsible className="w-full">
               {processSteps.map((step, index) =>
               <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#39FF14]">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-[#39FF14] transition-colors duration-200">
                     {step.title}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground text-base leading-relaxed">
@@ -228,8 +230,8 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}
             className="text-center mb-12">
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -246,12 +248,12 @@ export default function AboutPage() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
               className={index === 4 ? "md:col-span-2 lg:col-span-1" : ""}>
 
                 <Card
-                className={`h-full hover:border-[#39FF14] transition-all duration-300 group`}
+                className={`h-full hover:border-[#39FF14] transition-all duration-200 group`}
                 style={{
                   backgroundColor: item.color,
                   borderColor: item.color === "#39FF14" ? "#39FF14" : undefined
@@ -259,13 +261,13 @@ export default function AboutPage() {
                   <CardHeader>
                     <div className="flex items-center justify-between mb-4">
                       <span
-                      className="text-4xl font-bold opacity-50 group-hover:opacity-100 transition-opacity"
+                      className="text-4xl font-bold opacity-50 group-hover:opacity-100 transition-opacity duration-200"
                       style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#39FF14" }}>
                         {item.step}
                       </span>
                     </div>
                     <CardTitle
-                    className="text-xl group-hover:text-[#39FF14] transition-colors"
+                    className="text-xl group-hover:text-[#39FF14] transition-colors duration-200"
                     style={{ color: item.color === "#F5F5F5" ? "#1A1A1A" : item.color === "#39FF14" ? "#000000" : "#FFFFFF" }}>
                       {item.title}
                     </CardTitle>
@@ -290,8 +292,8 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}>
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4 }}>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
@@ -304,14 +306,14 @@ export default function AboutPage() {
                 key={i}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.3, delay: i * 0.05 }}
                 className="text-center">
 
                   <div className="flex justify-center mb-4 text-[#39FF14]">
                     {stat.icon}
                   </div>
-                  <div className="text-4xl md:text-5xl font-bold mb-2 text-[#39FF14] !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">
+                  <div className="text-4xl md:text-5xl font-bold mb-2 text-[#39FF14]">
                     {stat.value}
                   </div>
                   <div className="text-muted-foreground font-medium">
