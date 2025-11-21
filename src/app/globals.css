@@ -150,6 +150,8 @@
   
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   body {
@@ -157,6 +159,7 @@
     color: var(--foreground);
     font-family: var(--font-poppins);
     line-height: 1.6;
+    overflow-x: hidden;
   }
   
   a, button {
@@ -172,6 +175,11 @@
     background-color: var(--accent-green);
     color: #000000;
   }
+  
+  /* Performance optimizations */
+  img {
+    content-visibility: auto;
+  }
 }
 
 /* Hide Next.js error overlay portal */
@@ -179,12 +187,12 @@ nextjs-portal {
   display: none !important;
 }
 
-/* Page transitions */
+/* Enhanced page transitions */
 .page-transition {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -195,9 +203,21 @@ nextjs-portal {
   }
 }
 
-/* Custom scrollbar */
+/* Smooth scroll snap for horizontal scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar with smooth animations */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -207,9 +227,36 @@ nextjs-portal {
 ::-webkit-scrollbar-thumb {
   background: var(--accent-green);
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-green);
   opacity: 0.8;
+}
+
+/* Loading optimizations */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Hardware acceleration for animations */
+.motion-safe {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimize rendering */
+@layer utilities {
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .optimize-rendering {
+    contain: layout style paint;
+  }
 }
