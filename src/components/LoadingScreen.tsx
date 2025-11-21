@@ -5,29 +5,40 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function LoadingScreen() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Simulate loading progress
-    const duration = 2000; // 2 seconds
-    const interval = 20;
-    const steps = duration / interval;
-    const increment = 100 / steps;
+    // Check if loading screen has already been shown in this session
+    const hasShownLoading = sessionStorage.getItem("hasShownLoading");
+    
+    // Only show loading screen if it hasn't been shown yet
+    if (!hasShownLoading) {
+      setLoading(true);
+      
+      // Mark as shown for this session
+      sessionStorage.setItem("hasShownLoading", "true");
+      
+      // Simulate loading progress
+      const duration = 2000; // 2 seconds
+      const interval = 20;
+      const steps = duration / interval;
+      const increment = 100 / steps;
 
-    const timer = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + increment;
-        if (next >= 100) {
-          clearInterval(timer);
-          setTimeout(() => setLoading(false), 300);
-          return 100;
-        }
-        return next;
-      });
-    }, interval);
+      const timer = setInterval(() => {
+        setProgress((prev) => {
+          const next = prev + increment;
+          if (next >= 100) {
+            clearInterval(timer);
+            setTimeout(() => setLoading(false), 300);
+            return 100;
+          }
+          return next;
+        });
+      }, interval);
 
-    return () => clearInterval(timer);
+      return () => clearInterval(timer);
+    }
   }, []);
 
   return (
