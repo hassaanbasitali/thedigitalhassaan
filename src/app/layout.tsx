@@ -6,6 +6,7 @@ import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { FloatingContactBar } from "@/components/FloatingContactBar";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Hassaan Basit | Digital Growth Architect",
@@ -44,6 +45,7 @@ export default function RootLayout({
         <main className="page-transition">
           {children}
         </main>
+        <Toaster />
         <VisualEditsMessenger />
       </body>
     </html>
