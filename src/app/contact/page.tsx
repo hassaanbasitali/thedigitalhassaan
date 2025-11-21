@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState } from "react"
-import { Mail, Phone, MapPin, Send, Clock, MessageSquare } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Select } from "@/components/ui/select"
-import { Footer } from "@/components/Footer"
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Mail, Phone, MapPin, Send, Clock, MessageSquare } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Select } from "@/components/ui/select";
+import { Footer } from "@/components/Footer";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,14 +19,14 @@ export default function ContactPage() {
     service: "",
     budget: "",
     message: ""
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    alert("Thank you for your message! I'll get back to you within 24 hours.")
+    e.preventDefault();
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    alert("Thank you for your message! I'll get back to you within 24 hours.");
     setFormData({
       name: "",
       email: "",
@@ -35,9 +35,9 @@ export default function ContactPage() {
       service: "",
       budget: "",
       message: ""
-    })
-    setIsSubmitting(false)
-  }
+    });
+    setIsSubmitting(false);
+  };
 
   return (
     <>
@@ -47,8 +47,8 @@ export default function ContactPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+            transition={{ duration: 0.8 }}>
+
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Let's Build Something
               <span className="text-[#39FF14]"> Amazing</span>
@@ -69,8 +69,8 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6"
-            >
+              className="space-y-6">
+
               <Card>
                 <CardHeader>
                   <CardTitle>Get In Touch</CardTitle>
@@ -87,9 +87,9 @@ export default function ContactPage() {
                       <p className="font-semibold mb-1">Email</p>
                       <a
                         href="mailto:hassaan@example.com"
-                        className="text-muted-foreground hover:text-[#39FF14] transition-colors"
-                      >
-                        hassaan@example.com
+                        className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+                        hassaanbasitali@gmail.com
+
                       </a>
                     </div>
                   </div>
@@ -102,8 +102,8 @@ export default function ContactPage() {
                       <p className="font-semibold mb-1">Phone</p>
                       <a
                         href="tel:+1234567890"
-                        className="text-muted-foreground hover:text-[#39FF14] transition-colors"
-                      >
+                        className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+
                         +1 (234) 567-890
                       </a>
                     </div>
@@ -153,8 +153,8 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="lg:col-span-2"
-            >
+              className="lg:col-span-2">
+
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl">Send Me a Message</CardTitle>
@@ -174,8 +174,8 @@ export default function ContactPage() {
                           placeholder="John Doe"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          required
-                        />
+                          required />
+
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
@@ -187,8 +187,8 @@ export default function ContactPage() {
                           placeholder="john@example.com"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          required
-                        />
+                          required />
+
                       </div>
                     </div>
 
@@ -201,8 +201,8 @@ export default function ContactPage() {
                           id="company"
                           placeholder="Your Company"
                           value={formData.company}
-                          onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        />
+                          onChange={(e) => setFormData({ ...formData, company: e.target.value })} />
+
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium mb-2">
@@ -213,8 +213,8 @@ export default function ContactPage() {
                           type="tel"
                           placeholder="+1 (234) 567-890"
                           value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        />
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
+
                       </div>
                     </div>
 
@@ -227,8 +227,8 @@ export default function ContactPage() {
                           id="service"
                           value={formData.service}
                           onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm"
-                        >
+                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
+
                           <option value="">Select a service</option>
                           <option value="full-ecosystem">Full Digital Ecosystem</option>
                           <option value="website">Website Development</option>
@@ -247,8 +247,8 @@ export default function ContactPage() {
                           id="budget"
                           value={formData.budget}
                           onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm"
-                        >
+                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
+
                           <option value="">Select budget</option>
                           <option value="under-5k">Under $5,000</option>
                           <option value="5k-10k">$5,000 - $10,000</option>
@@ -269,23 +269,23 @@ export default function ContactPage() {
                         rows={6}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        required
-                      />
+                        required />
+
                     </div>
 
                     <Button
                       type="submit"
                       size="lg"
                       className="w-full bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        "Sending..."
-                      ) : (
-                        <>
+                      disabled={isSubmitting}>
+
+                      {isSubmitting ?
+                      "Sending..." :
+
+                      <>
                           Send Message <Send className="ml-2" size={18} />
                         </>
-                      )}
+                      }
                     </Button>
                   </form>
                 </CardContent>
@@ -303,8 +303,8 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Common <span className="text-[#39FF14]">Questions</span>
             </h2>
@@ -312,30 +312,30 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              {
-                q: "What's your typical project timeline?",
-                a: "Most projects take 6-12 weeks depending on scope. Full ecosystems can take 3-4 months."
-              },
-              {
-                q: "Do you work with international clients?",
-                a: "Yes! I work with clients globally and am comfortable with remote collaboration."
-              },
-              {
-                q: "What's your payment structure?",
-                a: "Typically 50% upfront, 25% at midpoint, and 25% upon completion. Custom terms available."
-              },
-              {
-                q: "Do you provide ongoing support?",
-                a: "Yes, all projects include support. Long-term maintenance packages are also available."
-              }
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
+            {
+              q: "What's your typical project timeline?",
+              a: "Most projects take 6-12 weeks depending on scope. Full ecosystems can take 3-4 months."
+            },
+            {
+              q: "Do you work with international clients?",
+              a: "Yes! I work with clients globally and am comfortable with remote collaboration."
+            },
+            {
+              q: "What's your payment structure?",
+              a: "Typically 50% upfront, 25% at midpoint, and 25% upon completion. Custom terms available."
+            },
+            {
+              q: "Do you provide ongoing support?",
+              a: "Yes, all projects include support. Long-term maintenance packages are also available."
+            }].
+            map((item, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}>
+
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-lg">{item.q}</CardTitle>
@@ -345,12 +345,12 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
       <Footer />
-    </>
-  )
+    </>);
+
 }
