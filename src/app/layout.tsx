@@ -5,6 +5,7 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { FloatingContactBar } from "@/components/FloatingContactBar";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "Hassaan Basit | Digital Growth Architect",
@@ -27,6 +28,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <ErrorReporter />
+        <LoadingScreen />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
           strategy="afterInteractive"
