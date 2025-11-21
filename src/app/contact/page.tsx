@@ -102,9 +102,9 @@ export default function ContactPage() {
                       <p className="font-semibold mb-1">Phone</p>
                       <a
                         href="tel:+1234567890"
-                        className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+                        className="text-muted-foreground hover:text-[#39FF14] transition-colors">+92 300 1181 588
 
-                        +1 (234) 567-890
+
                       </a>
                     </div>
                   </div>
