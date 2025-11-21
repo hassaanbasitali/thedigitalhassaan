@@ -27,7 +27,7 @@ export default function ABHSystemsCase() {
               ABH <span className="text-[#39FF14]">Systems</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
-              Strategic positioning pivot generating $180K in qualified pipeline within 90 days
+              A hyper-efficient brand launch for a new tech subsidiary that delivered exceptional ROI and immediate market traction.
             </p>
           </motion.div>
         </div>
@@ -44,8 +44,8 @@ export default function ABHSystemsCase() {
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop"
-              alt="ABH Systems Website"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Abh-Laptops-1763757514325.png?width=8000&height=8000&resize=contain"
+              alt="ABH Systems Project"
               fill
               className="object-cover"
             />
@@ -70,10 +70,10 @@ export default function ABHSystemsCase() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { icon: <Target size={40} />, value: "$180K", label: "Pipeline in 90 Days" },
-              { icon: <Users size={40} />, value: "35+", label: "Enterprise Leads" },
-              { icon: <TrendingUp size={40} />, value: "+420%", label: "Lead Quality Score" },
-              { icon: <CheckCircle size={40} />, value: "8.2x", label: "ROI on Investment" }
+              { icon: <Target size={40} />, value: "35+", label: "Sales in 60 Days" },
+              { icon: <TrendingUp size={40} />, value: "625x", label: "Return on Ad Spend" },
+              { icon: <Users size={40} />, value: "10+", label: "Platforms Launched" },
+              { icon: <CheckCircle size={40} />, value: "<90 Days", label: "From 0 to Profitable" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -113,18 +113,8 @@ export default function ABHSystemsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Challenge</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              ABH Systems, a B2B technology solutions provider, was positioned too broadly in the market. Their 
-              messaging tried to appeal to everyone, which meant it resonated with no one. They were generating 
-              some leads, but most were low-quality and from companies too small to afford their enterprise solutions.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              Their sales team was spending countless hours qualifying leads that weren't a good fit, and their 
-              marketing efforts weren't attracting the enterprise clients they needed to grow profitably.
-            </p>
             <p className="text-lg text-muted-foreground">
-              They needed a complete strategic repositioning and a digital ecosystem specifically designed to attract 
-              and convert enterprise B2B clients.
+              ABH Systems was a new venture launching into a hyper-competitive market with zero brand recognition, no online presence, and a limited startup budget. The goal was to build a complete business from scratch and achieve immediate profitability with maximum capital efficiency.
             </p>
           </motion.div>
         </div>
@@ -142,30 +132,23 @@ export default function ABHSystemsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Solution</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              I developed a comprehensive strategy focused on quality over quantity:
-            </p>
             <div className="space-y-6">
               {[
                 {
-                  title: "Strategic Repositioning",
-                  description: "Narrowed their focus to a specific industry vertical where they had the most success. Repositioned them as specialized experts rather than generalists, commanding premium pricing."
+                  title: "Forensic Market Research",
+                  description: "Conducted an exhaustive market intelligence phase, analyzing everything from Reddit communities to competitor ad libraries to define a precise, in-demand niche and target audience."
                 },
                 {
-                  title: "Enterprise-Focused Website",
-                  description: "Rebuilt the website specifically for enterprise decision-makers, featuring detailed case studies, ROI calculators, and trust signals that resonate with large organizations."
+                  title: "Complete Brand Architecture",
+                  description: "Engineered the entire brand identity from scratch, including the Unique Selling Proposition (USP), logos, color palettes, and all foundational marketing collateral."
                 },
                 {
-                  title: "Thought Leadership Content",
-                  description: "Created in-depth white papers, industry reports, and executive guides that positioned them as thought leaders and attracted C-level attention."
+                  title: "Omnichannel Sales Infrastructure",
+                  description: "Architected their commercial presence across more than ten platforms, including social channels for brand building and high-intent marketplaces like OLX and Daraz for immediate sales."
                 },
                 {
-                  title: "Account-Based Marketing",
-                  description: "Implemented a targeted ABM strategy with personalized campaigns for their ideal customer profile, ensuring marketing efforts focused on high-value prospects."
-                },
-                {
-                  title: "Sales Enablement System",
-                  description: "Built a comprehensive sales enablement platform with automated qualification, nurturing sequences, and sales collateral that accelerated the enterprise sales cycle."
+                  title: "Hyper-Efficient Go-to-Market",
+                  description: "Managed the entire launch process, from product photoshoots to deploying a powerful organic content machine, supplemented by surgical, micro-spend ad campaigns to ignite sales."
                 }
               ].map((item, i) => (
                 <motion.div
@@ -205,19 +188,12 @@ export default function ABHSystemsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Results</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              The strategic pivot delivered exceptional results:
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "$180K in qualified pipeline within 90 days",
-                "35+ enterprise-level leads",
-                "420% improvement in lead quality score",
-                "8.2x return on investment",
-                "Average deal size increased by 3.4x",
-                "Sales cycle reduced by 40%",
-                "Featured speaker at industry conferences",
-                "Established as category leader"
+                "Generated over 35 sales in the first 60 days from a complete standing start.",
+                "Achieved an almost unbelievable return on a minuscule ad spend of only 2,800 PKR.",
+                "Successfully launched and established a profitable, revenue-generating business in under 3 months.",
+                "Proved the business model and achieved immediate market validation."
               ].map((result, i) => (
                 <motion.div
                   key={i}
@@ -249,22 +225,19 @@ export default function ABHSystemsCase() {
               <CardContent className="pt-8">
                 <div className="flex items-center gap-4 mb-6">
                   <Image
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
-                    alt="Emily Rodriguez"
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-cbbb102d-20251117213325.jpg"
+                    alt="Akbar Ali"
                     width={80}
                     height={80}
                     className="rounded-full"
                   />
                   <div>
-                    <p className="font-bold text-xl">Emily Rodriguez</p>
-                    <p className="text-muted-foreground">Marketing Director, ABH Systems</p>
+                    <p className="font-bold text-xl">Akbar Ali</p>
+                    <p className="text-muted-foreground">CEO, ABH Systems Pvt Ltd</p>
                   </div>
                 </div>
                 <blockquote className="text-lg italic text-muted-foreground leading-relaxed">
-                  "Hassaan's strategic approach is unmatched. He positioned us perfectly in the market and built 
-                  systems that generated $180K in pipeline within 90 days. Incredible ROI. What impressed me most 
-                  was how he understood our business better than we did ourselves. He saw opportunities we were 
-                  missing and executed flawlessly. This is what working with a true digital growth architect looks like."
+                  "We were a new brand launching on a very tight budget. What impressed me most about Hassaan was his efficiency—he didn't waste a single rupee. He built our entire brand and got us making sales almost immediately. To get over 35 sales in our first two months with such a tiny ad spend is incredible. He's incredibly efficient with capital. The return on our small investment was outstanding."
                 </blockquote>
               </CardContent>
             </Card>

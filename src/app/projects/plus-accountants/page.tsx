@@ -27,7 +27,7 @@ export default function PlusAccountantsCase() {
               Plus <span className="text-[#39FF14]">Accountants</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
-              Complete digital transformation delivering 340% increase in organic traffic and consistent qualified lead flow
+              A complete digital transformation that doubled monthly revenue, reactivated a dormant client base, and built a sustainable growth engine.
             </p>
           </motion.div>
         </div>
@@ -44,8 +44,8 @@ export default function PlusAccountantsCase() {
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=800&fit=crop"
-              alt="Plus Accountants Website"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain"
+              alt="Plus Accountants Project"
               fill
               className="object-cover"
             />
@@ -70,10 +70,10 @@ export default function PlusAccountantsCase() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { icon: <TrendingUp size={40} />, value: "+340%", label: "Organic Traffic Growth" },
-              { icon: <Users size={40} />, value: "85+", label: "Qualified Leads/Month" },
-              { icon: <Target size={40} />, value: "4.2x", label: "ROI Increase" },
-              { icon: <CheckCircle size={40} />, value: "92%", label: "Client Satisfaction" }
+              { icon: <TrendingUp size={40} />, value: "+200%", label: "Revenue Growth" },
+              { icon: <Users size={40} />, value: "70+", label: "New Clients Closed" },
+              { icon: <Target size={40} />, value: "4.2x", label: "Engagement Rate" },
+              { icon: <CheckCircle size={40} />, value: "95%", label: "Client Retention" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -113,14 +113,8 @@ export default function PlusAccountantsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Challenge</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Plus Accountants came to me with an outdated website that wasn't generating any meaningful traffic or leads. 
-              Their brand positioning was unclear, and they were struggling to differentiate themselves in a crowded market 
-              of accounting firms.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              They needed more than just a new website—they needed a complete digital transformation that would establish 
-              them as a modern, tech-savvy accounting firm and generate a consistent stream of qualified leads.
+            <p className="text-lg text-muted-foreground">
+              Plus Accountants had a strong client base but suffered from zero digital engagement and no system for generating a consistent lead flow. They were losing ground to modern competitors and needed a complete digital overhaul to reignite their growth.
             </p>
           </motion.div>
         </div>
@@ -138,30 +132,23 @@ export default function PlusAccountantsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Solution</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              I architected a complete digital ecosystem for Plus Accountants:
-            </p>
             <div className="space-y-6">
               {[
                 {
+                  title: "Immediate Revenue Activation",
+                  description: "Launched a targeted re-engagement campaign to their existing client list via Zoho CRM and an optimized WhatsApp channel, securing over 50 clients in the first two months."
+                },
+                {
                   title: "Brand Repositioning",
-                  description: "Developed a modern brand identity and positioning strategy that differentiated them as forward-thinking accountants who embrace technology and automation."
+                  description: "Refreshed the brand's visual assets and defined a clear brand message to project a more modern, authoritative image across all platforms."
                 },
                 {
-                  title: "Website Redesign & Development",
-                  description: "Built a fast, SEO-optimized website with clear service messaging, compelling calls-to-action, and an intuitive user experience designed for conversion."
+                  title: "Organic Ecosystem Build",
+                  description: "Built and optimized their presence on key social platforms, deploying platform-specific content strategies that established them as thought leaders without any ad spend."
                 },
                 {
-                  title: "Content Strategy & SEO",
-                  description: "Created a comprehensive content strategy targeting high-value keywords and built authority through educational blog content and case studies."
-                },
-                {
-                  title: "Marketing Automation",
-                  description: "Implemented automated lead capture, email nurturing sequences, and CRM integration to ensure no leads fell through the cracks."
-                },
-                {
-                  title: "Analytics & Optimization",
-                  description: "Set up comprehensive tracking and created a dashboard for monitoring key metrics, enabling data-driven decision making and continuous improvement."
+                  title: "Systemization & Scaling",
+                  description: "Implemented a custom CRM and sales tracking process to manage the new influx of leads, creating a sustainable growth system that their internal staff continues to use today."
                 }
               ].map((item, i) => (
                 <motion.div
@@ -201,19 +188,12 @@ export default function PlusAccountantsCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Results</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Within 6 months of launch, Plus Accountants saw transformative results:
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "340% increase in organic traffic",
-                "85+ qualified leads per month",
-                "First page rankings for 23 target keywords",
-                "4.2x return on investment",
-                "52% reduction in cost per acquisition",
-                "28% increase in average client value",
-                "Consistent 92% client satisfaction score",
-                "Featured in industry publications"
+                "Doubled the client's monthly revenue.",
+                "Secured 70+ new client contracts and 20+ high-value upsells.",
+                "Engaged with 347 new prospects, leading to a consistent lead flow.",
+                "Established a fully operational digital ecosystem now managed by their in-house team."
               ].map((result, i) => (
                 <motion.div
                   key={i}
@@ -245,22 +225,19 @@ export default function PlusAccountantsCase() {
               <CardContent className="pt-8">
                 <div className="flex items-center gap-4 mb-6">
                   <Image
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
-                    alt="Sarah Johnson"
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-ce36087c-20251117213325.jpg"
+                    alt="Muhammad Kamran"
                     width={80}
                     height={80}
                     className="rounded-full"
                   />
                   <div>
-                    <p className="font-bold text-xl">Sarah Johnson</p>
+                    <p className="font-bold text-xl">Muhammad Kamran</p>
                     <p className="text-muted-foreground">CEO, Plus Accountants</p>
                   </div>
                 </div>
                 <blockquote className="text-lg italic text-muted-foreground leading-relaxed">
-                  "Hassaan didn't just build us a website - he architected an entire growth system. The results speak 
-                  for themselves: 340% increase in organic traffic and qualified leads flowing in consistently. He 
-                  understood our business deeply and created solutions we didn't even know we needed. Best investment 
-                  we've made in our company."
+                  "Before Hassaan, our digital marketing was non-existent. He came in with a clear, methodical plan and built a complete system from the ground up. He didn't just get us new followers; he re-engaged our old clients and created a predictable way to get new ones. The best part? Our revenue doubled, and the system he built is something my own team can now easily manage."
                 </blockquote>
               </CardContent>
             </Card>

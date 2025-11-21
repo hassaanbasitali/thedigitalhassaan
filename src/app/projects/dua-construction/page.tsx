@@ -24,10 +24,10 @@ export default function DUAConstructionCase() {
               Back to Home
             </Link>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              DUA <span className="text-[#39FF14]">Construction</span>
+              Dua <span className="text-[#39FF14]">Construction Services</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
-              Multi-phase ecosystem build generating 50+ qualified leads per month and establishing market authority
+              Architecting a professional digital presence from scratch that established market authority and secured two major, high-value contracts.
             </p>
           </motion.div>
         </div>
@@ -44,8 +44,8 @@ export default function DUAConstructionCase() {
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop"
-              alt="DUA Construction Website"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757493868.png?width=8000&height=8000&resize=contain"
+              alt="Dua Construction Services Project"
               fill
               className="object-cover"
             />
@@ -70,10 +70,10 @@ export default function DUAConstructionCase() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { icon: <Users size={40} />, value: "50+", label: "Qualified Leads/Month" },
-              { icon: <TrendingUp size={40} />, value: "+280%", label: "Website Traffic Growth" },
-              { icon: <Target size={40} />, value: "5.8x", label: "Lead Quality Score" },
-              { icon: <CheckCircle size={40} />, value: "$2.4M", label: "Pipeline Generated" }
+              { icon: <CheckCircle size={40} />, value: "2", label: "Major Contracts Secured" },
+              { icon: <Users size={40} />, value: "20+", label: "Qualified Leads Generated" },
+              { icon: <TrendingUp size={40} />, value: "From 0 to Credible", label: "Digital Presence" },
+              { icon: <Target size={40} />, value: "High-Value", label: "Pipeline Value Generated" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -113,18 +113,8 @@ export default function DUAConstructionCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Challenge</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              DUA Construction was relying entirely on word-of-mouth and traditional marketing methods. While this 
-              brought in some business, it was inconsistent and didn't allow them to scale predictably.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              They had a basic website that didn't showcase their work effectively, no content marketing strategy, 
-              and no system for capturing and nurturing leads. In the competitive construction market, they were 
-              virtually invisible online.
-            </p>
             <p className="text-lg text-muted-foreground">
-              They needed a comprehensive digital ecosystem that would generate consistent, high-quality leads and 
-              establish them as a trusted authority in their market.
+              Dua Construction Services had a credibility problem. Their digital presence was outdated and unprofessional, and a banned Google profile made them invisible to local clients, costing them major project opportunities.
             </p>
           </motion.div>
         </div>
@@ -142,30 +132,23 @@ export default function DUAConstructionCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Solution</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              I developed a multi-phase digital ecosystem strategy:
-            </p>
             <div className="space-y-6">
               {[
                 {
-                  title: "Phase 1: Foundation",
-                  description: "Rebuilt the website with a focus on showcasing their portfolio, client testimonials, and clear service offerings. Implemented lead capture forms and integrated with their CRM."
+                  title: "Digital Presence Overhaul",
+                  description: "Conducted a full audit and created a content strategy, transforming their inconsistent social media into a professional and cohesive brand presence."
                 },
                 {
-                  title: "Phase 2: Content Authority",
-                  description: "Created a comprehensive content strategy including project case studies, educational blog posts, and video walkthroughs of completed projects to build trust and authority."
+                  title: "Credibility & Asset Creation",
+                  description: "Architected their foundational digital assets from the ground up, including their first professional website, a compelling company profile, and an optimized LinkedIn profile for the owner."
                 },
                 {
-                  title: "Phase 3: Lead Generation",
-                  description: "Implemented targeted SEO campaigns, local search optimization, and paid advertising to drive qualified traffic. Set up automated lead nurturing sequences."
+                  title: "Strategic Visibility",
+                  description: "Circumvented their Google ban by establishing a dominant, verified business presence on Yandex, instantly restoring their local search viability."
                 },
                 {
-                  title: "Phase 4: Social Proof",
-                  description: "Built a system for collecting and showcasing client reviews, created shareable project galleries, and established their presence on relevant industry platforms."
-                },
-                {
-                  title: "Phase 5: Optimization",
-                  description: "Implemented analytics tracking, conversion rate optimization, and ongoing A/B testing to continuously improve lead quality and conversion rates."
+                  title: "Lead Generation System",
+                  description: "Implemented a consistent content deployment schedule and an optimized WhatsApp Business account to professionally manage all incoming inquiries."
                 }
               ].map((item, i) => (
                 <motion.div
@@ -205,19 +188,12 @@ export default function DUAConstructionCase() {
             <h2 className="text-4xl font-bold mb-6">
               The <span className="text-[#39FF14]">Results</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              The ecosystem transformed DUA Construction's business:
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "50+ qualified leads per month consistently",
-                "280% increase in website traffic",
-                "$2.4M in pipeline generated in first year",
-                "5.8x improvement in lead quality score",
-                "First page rankings for all target keywords",
-                "Featured in top construction industry blogs",
-                "85% reduction in cost per lead",
-                "Established as regional market leader"
+                "Directly secured two monumental, high-value construction contracts.",
+                "Generated a pipeline of over 20 qualified project leads.",
+                "Transformed the business from a digital liability into a powerful lead-generation asset.",
+                "Established a professional, credible online image that builds trust with high-ticket clients."
               ].map((result, i) => (
                 <motion.div
                   key={i}
@@ -249,22 +225,19 @@ export default function DUAConstructionCase() {
               <CardContent className="pt-8">
                 <div className="flex items-center gap-4 mb-6">
                   <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
-                    alt="Michael Chen"
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/82745004-5748-4154-8146-df633235fbda/generated_images/professional-corporate-headshot-of-a-sou-2f66ceb7-20251117213325.jpg"
+                    alt="Zain Ul Arifeen"
                     width={80}
                     height={80}
                     className="rounded-full"
                   />
                   <div>
-                    <p className="font-bold text-xl">Michael Chen</p>
-                    <p className="text-muted-foreground">Founder, DUA Construction</p>
+                    <p className="font-bold text-xl">Zain Ul Arifeen</p>
+                    <p className="text-muted-foreground">Founder, Dua Construction Services</p>
                   </div>
                 </div>
                 <blockquote className="text-lg italic text-muted-foreground leading-relaxed">
-                  "Working with Hassaan was transformative. He understood our business deeply and created a digital 
-                  ecosystem that actually drives growth. We're seeing 50+ qualified leads every month now, and the 
-                  quality is outstanding. His multi-phase approach meant we saw results quickly while building a 
-                  foundation for long-term growth. Can't recommend him enough."
+                  "I was skeptical that 'digital marketing' would work for a construction business like ours. Hassaan took our inconsistent social media and lack of professional materials and completely transformed our image. The company profile he created and the strategy he implemented made us look credible and professional, which is everything in this industry. The results are real—we closed two huge deals directly because of the system he put in place."
                 </blockquote>
               </CardContent>
             </Card>
