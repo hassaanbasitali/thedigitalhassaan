@@ -147,12 +147,13 @@ export default function AboutPage() {
       {/* The Architect's Advantage - NEW SECTION */}
       <section className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.4 }}
-            className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4 }}
+              className="text-center mb-12">
+
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               The Architect's <span className="text-[#39FF14]">Advantage</span>
@@ -187,12 +188,13 @@ export default function AboutPage() {
       {/* My Architectural Process */}
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.4 }}
-            className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4 }}
+              className="text-center mb-12">
+
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               My Architectural <span className="text-[#39FF14]">Process</span>
@@ -227,12 +229,13 @@ export default function AboutPage() {
       {/* 5-Step Ecosystem Blueprint */}
       <section className="py-20 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.4 }}
-            className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4 }}
+              className="text-center mb-12">
+
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               My 5-Step <span className="text-[#39FF14]">Ecosystem Blueprint</span>
