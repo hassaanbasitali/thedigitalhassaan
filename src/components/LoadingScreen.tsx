@@ -51,12 +51,13 @@ export function LoadingScreen() {
       {loading && (
         <motion.div
           initial={{ opacity: 1 }}
-          exit={{ 
-            opacity: 0, 
-            scale: 1.1,
-            filter: "blur(20px)",
-            transition: { duration: 0.8, ease: "easeInOut" } 
-          }}
+            exit={{ 
+              opacity: 0, 
+              scale: 1.05,
+              filter: "blur(10px)",
+              transition: { duration: 0.5, ease: "easeOut" } 
+            }}
+
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black overflow-hidden"
         >
           {/* Background Ambient Glow */}
