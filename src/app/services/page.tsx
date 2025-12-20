@@ -188,13 +188,10 @@ export default function ServicesPage() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
                   Full Digital <span className="text-[#39FF14]">Ecosystem</span>
                 </h2>
-                <p className="text-xl text-muted-foreground mb-6">
-                  This is my all-in-one, flagship service for businesses ready for a complete growth partner. It combines every single one of my expert services into a single, cohesive, and professionally managed system designed for maximum results.
-                </p>
-                <div className="flex items-baseline gap-2 mb-8">
-                  <span className="text-5xl font-bold text-[#39FF14]">$1000</span>
+                  <p className="text-xl text-muted-foreground mb-6">
+                    This is my all-in-one, flagship service for businesses ready for a complete growth partner. It combines every single one of my expert services into a single, cohesive, and professionally managed system designed for maximum results.
+                  </p>
                 </div>
-              </div>
 
               <CardContent className="p-8 md:p-12">
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
