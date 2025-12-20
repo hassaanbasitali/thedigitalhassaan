@@ -145,15 +145,12 @@ export default function ServicesPage() {
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
                 <Card className="h-full flex flex-col hover:border-[#39FF14] transition-colors group">
-                  <CardHeader>
-                    <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
-                      {service.title}
-                    </CardTitle>
-                    <div className="text-2xl font-bold text-[#39FF14] my-2">
-                      {service.price}
-                    </div>
-                    <CardDescription>{service.deliverable}</CardDescription>
-                  </CardHeader>
+                    <CardHeader>
+                      <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
+                        {service.title}
+                      </CardTitle>
+                      <CardDescription>{service.deliverable}</CardDescription>
+                    </CardHeader>
                   <CardContent className="flex-1">
                     <ul className="space-y-2">
                       {service.features.map((feature, i) => (
