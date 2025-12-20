@@ -28,6 +28,12 @@ export default function RootLayout({
       `}</style>
       </head>
       <body className="antialiased">
+        <Script
+          id="orchids-browser-logs"
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
+          strategy="afterInteractive"
+          data-orchids-project-id="82745004-5748-4154-8146-df633235fbda"
+        />
         <ErrorReporter />
         <LoadingScreen />
         <Script
