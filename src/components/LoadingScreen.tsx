@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 export function LoadingScreen() {
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Check if loading screen has already been shown in this session
     const hasShownLoading = sessionStorage.getItem("hasShownLoading");
     
@@ -17,7 +19,7 @@ export function LoadingScreen() {
       setLoading(true);
       
       // Simulate loading progress
-      const duration = 2500; // Slightly longer for better visual impact
+      const duration = 2000; // Slightly faster for better performance feel
       const interval = 20;
       const steps = duration / interval;
       const increment = 100 / steps;
@@ -31,7 +33,7 @@ export function LoadingScreen() {
             setTimeout(() => {
               setLoading(false);
               sessionStorage.setItem("hasShownLoading", "true");
-            }, 500);
+            }, 300);
             return 100;
           }
           return next;
@@ -41,6 +43,8 @@ export function LoadingScreen() {
       return () => clearInterval(timer);
     }
   }, []);
+
+  if (!mounted) return null;
 
   return (
     <AnimatePresence mode="wait">
