@@ -10,7 +10,6 @@ import { Footer } from "@/components/Footer"
 const alacarte = [
   {
     title: "Market Research Blueprint",
-    price: "$100",
     features: [
       "In-depth Market Analysis & Comprehensive Report",
       "Detailed Target Audience Persona & Analysis",
@@ -23,7 +22,6 @@ const alacarte = [
   },
   {
     title: "Digital Presence Audit",
-    price: "$100",
     features: [
       "Full Audit of Your Current Digital Strategy",
       "Honest, Unbiased Evaluation of Strengths & Weaknesses",
@@ -34,7 +32,6 @@ const alacarte = [
   },
   {
     title: "Brand Identity Kit",
-    price: "$150",
     features: [
       "Comprehensive Audit of Your Existing Brand",
       "Crafting Your Core Brand Messaging & Story",
@@ -47,7 +44,6 @@ const alacarte = [
   },
   {
     title: "Custom Growth Strategy",
-    price: "$150",
     features: [
       "In-depth Discovery Session to Understand Your Business",
       "A Custom-Tailored Strategic Solution for Your Unique Problems"
@@ -56,7 +52,6 @@ const alacarte = [
   },
   {
     title: "Organic Social Media Marketing",
-    price: "$200",
     features: [
       "Full Audit & Strategy for 3 Social Platforms (Excluding LinkedIn)",
       "Professional Account Creation & Optimization",
@@ -69,7 +64,6 @@ const alacarte = [
   },
   {
     title: "WordPress Website Development",
-    price: "$200 (Hosting & Domain Not Included)",
     features: [
       "A Professional 6-7 Page Modern Minimalist Website",
       "Highly Interactive & Smooth User Experience",
@@ -80,7 +74,6 @@ const alacarte = [
   },
   {
     title: "LinkedIn Authority Builder",
-    price: "$180",
     features: [
       "Complete Personal & Company Profile Architecture",
       "Optimization of all Key Sections",
@@ -92,7 +85,6 @@ const alacarte = [
   },
   {
     title: "Social Media Management & Ads (1 Month)",
-    price: "$350",
     features: [
       "Full Management for Meta (Facebook/Instagram) & Twitter",
       "A Content Plan of 30 Posts, 10 Stories, & 2 Edited Reels/Animations",
