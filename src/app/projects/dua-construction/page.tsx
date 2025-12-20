@@ -33,7 +33,7 @@ export default function DUAConstructionCase() {
         </div>
       </section>
 
-      {/* Project Image */}
+        {/* Project Image */}
         <section className="py-12 px-6">
           <div className="container mx-auto max-w-6xl">
             <motion.div
@@ -41,13 +41,14 @@ export default function DUAConstructionCase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-card"
+              className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black/5"
             >
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757493868.png?width=8000&height=8000&resize=contain"
                 alt="Dua Construction Services Project"
                 fill
-                className="object-contain p-4 md:p-8"
+                className="object-contain md:object-cover"
+                priority
               />
             </motion.div>
           </div>

@@ -27,20 +27,17 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  compress: true,
-  poweredByHeader: false,
-  reactStrictMode: true,
-  swcMinify: true,
-  turbopack: {
-    rules: {
-      "*.{jsx,tsx}": {
-        loaders: [LOADER]
-      }
+    compress: true,
+    poweredByHeader: false,
+    reactStrictMode: true,
+    swcMinify: true,
+    compiler: {
+      removeConsole: process.env.NODE_ENV === "production",
+    },
+    experimental: {
+      optimizePackageImports: ['framer-motion', 'lucide-react', 'clsx', 'tailwind-merge'],
     }
-  },
-  experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
-  }
+
 };
 
 export default nextConfig;
