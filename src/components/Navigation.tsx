@@ -8,11 +8,13 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navItems = [
-{ href: "/", label: "Home" },
-{ href: "/about", label: "About" },
-{ href: "/skills", label: "Skills" },
-{ href: "/services", label: "Services" },
-{ href: "/contact", label: "Contact" }];
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/skills", label: "Skills" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/services", label: "Services" },
+  { href: "/contact", label: "Contact" }
+];
 
 
 export function Navigation() {
