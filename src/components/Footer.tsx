@@ -67,11 +67,16 @@ export function Footer() {
                   Skills
                 </Link>
               </li>
-              <li>
-                <Link href="/services" className="text-muted-foreground hover:text-[#39FF14] transition-colors">
-                  Services
-                </Link>
-              </li>
+                <li>
+                  <Link href="/case-studies" className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+                    Case Studies
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="text-muted-foreground hover:text-[#39FF14] transition-colors">
+                    Services
+                  </Link>
+                </li>
             </ul>
           </div>
 

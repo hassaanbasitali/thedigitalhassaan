@@ -111,7 +111,7 @@ export default function ServicesPage() {
               Services & <span className="text-[#39FF14]">Packages</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Flexible solutions to fit your needs and budget, from individual services to complete digital ecosystem builds
+              Flexible solutions to fit your needs, from individual services to complete digital ecosystem builds
             </p>
           </motion.div>
         </div>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
               Ready to <span className="text-[#39FF14]">Get Started?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Let's discuss your project and create a custom solution that fits your needs and budget
+              Let's discuss your project and create a custom solution that fits your requirements
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">

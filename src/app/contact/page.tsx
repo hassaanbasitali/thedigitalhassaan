@@ -11,15 +11,14 @@ import { Select } from "@/components/ui/select";
 import { Footer } from "@/components/Footer";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    service: "",
-    budget: "",
-    message: ""
-  });
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      company: "",
+      phone: "",
+      service: "",
+      message: ""
+    });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -33,7 +32,6 @@ export default function ContactPage() {
       company: "",
       phone: "",
       service: "",
-      budget: "",
       message: ""
     });
     setIsSubmitting(false);
@@ -218,46 +216,28 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="service" className="block text-sm font-medium mb-2">
-                          Service Interested In
-                        </label>
-                        <select
-                          id="service"
-                          value={formData.service}
-                          onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="md:col-span-2">
+                          <label htmlFor="service" className="block text-sm font-medium mb-2">
+                            Service Interested In
+                          </label>
+                          <select
+                            id="service"
+                            value={formData.service}
+                            onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                            className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
 
-                          <option value="">Select a service</option>
-                          <option value="full-ecosystem">Full Digital Ecosystem</option>
-                          <option value="website">Website Development</option>
-                          <option value="branding">Brand Identity</option>
-                          <option value="seo">SEO & Content</option>
-                          <option value="marketing">Marketing Automation</option>
-                          <option value="consultation">Consultation</option>
-                          <option value="other">Other</option>
-                        </select>
+                            <option value="">Select a service</option>
+                            <option value="full-ecosystem">Full Digital Ecosystem</option>
+                            <option value="website">Website Development</option>
+                            <option value="branding">Brand Identity</option>
+                            <option value="seo">SEO & Content</option>
+                            <option value="marketing">Marketing Automation</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
                       </div>
-                      <div>
-                        <label htmlFor="budget" className="block text-sm font-medium mb-2">
-                          Budget Range
-                        </label>
-                        <select
-                          id="budget"
-                          value={formData.budget}
-                          onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                          className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
-
-                          <option value="">Select budget</option>
-                          <option value="under-5k">Under $5,000</option>
-                          <option value="5k-10k">$5,000 - $10,000</option>
-                          <option value="10k-25k">$10,000 - $25,000</option>
-                          <option value="25k-50k">$25,000 - $50,000</option>
-                          <option value="50k-plus">$50,000+</option>
-                        </select>
-                      </div>
-                    </div>
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium mb-2">
@@ -320,10 +300,10 @@ export default function ContactPage() {
               q: "Do you work with international clients?",
               a: "Yes! I work with clients globally and am comfortable with remote collaboration."
             },
-            {
-              q: "What's your payment structure?",
-              a: "Typically 50% upfront, 25% at midpoint, and 25% upon completion. Custom terms available."
-            },
+              {
+                q: "What's the best way to start?",
+                a: "Simply fill out the contact form above with your project details, or reach out directly via email or phone."
+              },
             {
               q: "Do you provide ongoing support?",
               a: "Yes, all projects include support. Long-term maintenance packages are also available."

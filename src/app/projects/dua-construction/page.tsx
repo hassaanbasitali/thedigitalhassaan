@@ -36,21 +36,21 @@ export default function DUAConstructionCase() {
         {/* Project Image */}
         <section className="py-12 px-6">
           <div className="container mx-auto max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black/5"
-            >
-              <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757493868.png?width=8000&height=8000&resize=contain"
-                alt="Dua Construction Services Project"
-                fill
-                className="object-contain md:object-cover"
-                priority
-              />
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black/5"
+              >
+                <Image
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Dua-Construction-1763757493868.png?width=8000&height=8000&resize=contain"
+                  alt="Dua Construction Services Project"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </motion.div>
           </div>
         </section>
 
