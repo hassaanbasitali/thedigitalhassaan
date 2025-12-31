@@ -138,11 +138,12 @@ export default function Home() {
               transition={{ duration: 0.6, ease: "easeOut" }}>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
-                Digital Growth
-                <span className="text-[#39FF14]"> Architect</span>
+                B2B Digital Marketing &
+                <span className="text-[#39FF14]"> Infrastructure Specialist</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I create interconnected Digital Ecosystems for service-based businesses, engineered to increase their sales and client acquisition.
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I bridge the gap between B2B marketing strategy and technical execution for USA Professional Services.
 
+As thedigitalhassaan, I architect ROI-driven Digital Infrastructure through Lead Generation, Organic Marketing, and forensic Market Research to scale high-ticket sales.
               </p>
               <motion.div 
                 className="flex flex-col sm:flex-row gap-4"
