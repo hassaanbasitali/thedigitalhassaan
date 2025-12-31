@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button"
 import { Footer } from "@/components/Footer"
 
 const servicePillars = [
-  {
-    pillar: "Sales Infrastructure",
-    description: "I build the automated systems that turn traffic into profit. Focus: CRM Automation, B2B Lead Generation, and Strategic Upselling Systems.",
-    services: [
+    {
+      pillar: "Sales Infrastructure",
+      description: "I architect the automated systems that turn traffic into high-ticket profit. Focus: CRM, B2B Lead Generation, and Upselling systems designed to automate and scale your business growth.",
+      services: [
       {
         title: "CRM & Sales Automation",
         features: ["HubSpot/Salesforce Integration", "Automated Follow-up Sequences", "Lead Scoring Systems", "Sales Pipeline Optimization"],
