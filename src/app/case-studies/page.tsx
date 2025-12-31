@@ -9,14 +9,14 @@ import { Button } from "@/components/ui/button"
 import { Footer } from "@/components/Footer"
 
 const projects = [
-  {
-    title: "Plus Accountants",
-    description: "A complete digital transformation that doubled monthly revenue and reactivated a dormant client base.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain",
-    href: "/projects/plus-accountants",
-    tags: ["Strategy", "CRM", "Social Media"],
-    stats: "+200% Revenue"
-  },
+    {
+      title: "Plus Accountants",
+      description: "B2B Marketing Case Study: Scaling an Australian Accounting Firm with Digital Infrastructure. Delivered 50+ sales and 20+ upsells through ROI-driven Digital Marketing and B2B Lead Generation.",
+      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain",
+      href: "/projects/plus-accountants",
+      tags: ["Strategy", "CRM", "Social Media"],
+      stats: "50+ Sales | 20+ Upsells"
+    },
   {
     title: "Dua Construction Services",
     description: "Architecting a professional digital presence from scratch that secured two major, high-value contracts.",
