@@ -24,10 +24,10 @@ export default function PlusAccountantsCase() {
               Back to Home
             </Link>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Plus <span className="text-[#39FF14]">Accountants</span>
+              B2B Marketing Case Study: Scaling an <span className="text-[#39FF14]">Accounting Firm</span> with Digital Infrastructure
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
-              A complete digital transformation that doubled monthly revenue, reactivated a dormant client base, and built a sustainable growth engine.
+              A ROI-driven Digital Marketing transformation that doubled monthly revenue and built a sustainable B2B Lead Generation engine for an Australian Accounting Firm.
             </p>
           </motion.div>
         </div>
@@ -43,11 +43,11 @@ export default function PlusAccountantsCase() {
                 transition={{ duration: 0.6 }}
                 className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black/5"
               >
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain"
-                  alt="Plus Accountants Project"
-                  fill
-                  className="object-contain"
+                  <Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain"
+                    alt="B2B Digital Marketing Infrastructure - WordPress Development for Australian Accounting Firm"
+                    fill
+                    className="object-contain"
                   priority
                 />
               </motion.div>

@@ -40,18 +40,18 @@ export default function CaseStudiesPage() {
     <>
       <section className="min-h-[60vh] flex items-center justify-center pt-20 px-6">
         <div className="container mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Case <span className="text-[#39FF14]">Studies</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Real results for real businesses. Explore how I've helped clients transform their digital presence and drive growth.
-            </p>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                B2B Marketing <span className="text-[#39FF14]">Case Studies</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
+                ROI-driven Digital Marketing & B2B Lead Generation: Scaling Professional Service Firms with custom Digital Infrastructure.
+              </p>
+            </motion.div>
         </div>
       </section>
 

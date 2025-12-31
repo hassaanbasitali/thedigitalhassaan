@@ -7,92 +7,69 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Footer } from "@/components/Footer"
 
-const alacarte = [
+const servicePillars = [
   {
-    title: "Market Research Blueprint",
-    features: [
-      "In-depth Market Analysis & Comprehensive Report",
-      "Detailed Target Audience Persona & Analysis",
-      "Curated List of Key Competitors",
-      "Forensic Competitor Analysis & Strategic Insights",
-      "Actionable Recommendations to Differentiate Your Brand",
-      "Data-Driven Platform Identification"
-    ],
-    deliverable: "A clear understanding of your market landscape, delivered via a comprehensive report, Excel database, and a professional visual presentation."
+    pillar: "Sales Infrastructure",
+    description: "I build the automated systems that turn traffic into profit. Focus: CRM Automation, B2B Lead Generation, and Strategic Upselling Systems.",
+    services: [
+      {
+        title: "CRM & Sales Automation",
+        features: ["HubSpot/Salesforce Integration", "Automated Follow-up Sequences", "Lead Scoring Systems", "Sales Pipeline Optimization"],
+        deliverable: "An automated engine that captures, nurtures, and converts leads without manual intervention."
+      },
+      {
+        title: "B2B Lead Generation",
+        features: ["High-Ticket Client Acquisition", "Cold Outreach Systems", "LinkedIn Automation", "Qualified Meeting Setting"],
+        deliverable: "A consistent stream of high-intent B2B leads ready for your sales team."
+      },
+      {
+        title: "Strategic Upselling Systems",
+        features: ["LTV Maximization", "Post-Purchase Automation", "Customer Retention Strategy", "Referral Loops"],
+        deliverable: "Increased revenue from your existing client base through logical growth systems."
+      }
+    ]
   },
   {
-    title: "Digital Presence Audit",
-    features: [
-      "Full Audit of Your Current Digital Strategy",
-      "Honest, Unbiased Evaluation of Strengths & Weaknesses",
-      "A Clear, Prioritized Action Plan for Improvement",
-      "Strategic Recommendations for Immediate Impact"
-    ],
-    deliverable: "A complete understanding of what to fix, presented in a clear roadmap to increase your sales and impact."
+    pillar: "Digital Presence",
+    description: "Your website is a sales tool, not just a flyer. Focus: WordPress Website Development, Branding, and High-Conversion Copywriting.",
+    services: [
+      {
+        title: "WordPress Website Development",
+        features: ["High-Performance Architecture", "Responsive Sales-First Design", "SEO Foundation & Interactivity", "Speed & Security Optimization"],
+        deliverable: "A professional, fast website engineered to act as your 24/7 digital salesperson."
+      },
+      {
+        title: "Branding & Identity Architecture",
+        features: ["Core Messaging Strategy", "Visual Identity & Logos", "Professional Brand Guidelines", "Market Positioning"],
+        deliverable: "A distinctive brand that commands authority in the USA professional services market."
+      },
+      {
+        title: "High-Conversion Copywriting",
+        features: ["Direct Response Sales Copy", "SEO Content Creation", "Brand Voice Development", "Psychological Trigger Integration"],
+        deliverable: "Compelling messaging that speaks directly to the needs of B2B decision-makers."
+      }
+    ]
   },
   {
-    title: "Brand Identity Kit",
-    features: [
-      "Comprehensive Audit of Your Existing Brand",
-      "Crafting Your Core Brand Messaging & Story",
-      "Development of 2 Unique Logo Concepts",
-      "Creation of 2 Professional Color Palettes",
-      "Selection of 2 Professional Font Pairings",
-      "A Suite of 5 High-Fidelity Brand Mockups"
-    ],
-    deliverable: "A complete, ready-to-use professional Brand Kit with all visual assets and a comprehensive presentation."
-  },
-  {
-    title: "Custom Growth Strategy",
-    features: [
-      "In-depth Discovery Session to Understand Your Business",
-      "A Custom-Tailored Strategic Solution for Your Unique Problems"
-    ],
-    deliverable: "An experienced, personalized strategy document that provides a clear and actionable roadmap for your business growth."
-  },
-  {
-    title: "Organic Social Media Marketing",
-    features: [
-      "Full Audit & Strategy for 3 Social Platforms (Excluding LinkedIn)",
-      "Professional Account Creation & Optimization",
-      "Complete Profile Visuals (Profile Image & Banner)",
-      "A Content Calendar of 20 High-Engagement Posts",
-      "Expertly Researched Captions & Trending Hashtags",
-      "Full Content Scheduling Across All Platforms"
-    ],
-    deliverable: "A professional and active social media presence with 20 days of high-end content, managed for you."
-  },
-  {
-    title: "WordPress Website Development",
-    features: [
-      "A Professional 6-7 Page Modern Minimalist Website",
-      "Highly Interactive & Smooth User Experience",
-      "Full Social Media & WhatsApp Integration",
-      "Expertly Written SEO-Optimized Foundational Content"
-    ],
-    deliverable: "A professional website that acts as your 24/7 digital salesperson."
-  },
-  {
-    title: "LinkedIn Authority Builder",
-    features: [
-      "Complete Personal & Company Profile Architecture",
-      "Optimization of all Key Sections",
-      "A Content Plan of 10 Image Posts, 10 Written Posts, 3 Articles, & 2 PDF Carousels",
-      "Strategic Network Growth (150+ Connections & 200+ Invites)",
-      "Proactive Engagement & Interaction Messaging"
-    ],
-    deliverable: "A powerful, professional LinkedIn presence for both you and your company, perfectly positioned to attract high-value B2B clients."
-  },
-  {
-    title: "Social Media Management & Ads (1 Month)",
-    features: [
-      "Full Management for Meta (Facebook/Instagram) & Twitter",
-      "A Content Plan of 30 Posts, 10 Stories, & 2 Edited Reels/Animations",
-      "Full Profile Management",
-      "Comprehensive Weekly Performance Reports",
-      "A Complete Meta Ad Campaign: - 3 High-Performance Ad Creatives, - 3 High-Conversion Ad Copies, - 12 Days of Strategic A/B Testing & Optimization, - Delivery of 1 Winning Ad Campaign & Ad Set"
-    ],
-    deliverable: "A professionally managed social presence and a data-driven ad campaign designed to deliver exceptional results."
+    pillar: "Traffic & Visibility",
+    description: "Tools to fuel your digital infrastructure. Focus: Meta Ads, Social Media Management, and Content Creation.",
+    services: [
+      {
+        title: "Meta Ads (Facebook & Instagram)",
+        features: ["ROI-Driven Campaign Setup", "Precision B2B Targeting", "A/B Testing & Optimization", "Detailed Performance Attribution"],
+        deliverable: "Predictable, scalable traffic that feeds directly into your sales infrastructure."
+      },
+      {
+        title: "Social Media Management",
+        features: ["Cross-Platform Content Strategy", "Authority Building (LinkedIn/Meta)", "Community Engagement", "Brand Awareness Campaigns"],
+        deliverable: "An active, professional presence that builds trust and long-term brand equity."
+      },
+      {
+        title: "Strategic Content Creation",
+        features: ["Educational Video/Reels", "Thought Leadership Articles", "Graphic Design & Carousels", "Content Distribution Systems"],
+        deliverable: "High-quality assets that position you as the 'Digital Infrastructure Architect' in your niche."
+      }
+    ]
   }
 ]
 
@@ -108,65 +85,67 @@ export default function ServicesPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Services & <span className="text-[#39FF14]">Packages</span>
+              Execution <span className="text-[#39FF14]">Pillars</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Flexible solutions to fit your needs, from individual services to complete digital ecosystem builds
+              I build the Digital Infrastructure that drives high-ticket sales for USA professional service firms.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* A La Carte Services */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              A La Carte <span className="text-[#39FF14]">Services</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Need something specific? Choose individual services to address your exact needs
-            </p>
-          </motion.div>
+      {/* Service Pillars */}
+      {servicePillars.map((pillar, pillarIndex) => (
+        <section key={pillarIndex} className={`py-20 px-6 ${pillarIndex % 2 === 1 ? 'bg-card' : ''}`}>
+          <div className="container mx-auto max-w-7xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                {pillar.pillar.split(' ')[0]} <span className="text-[#39FF14]">{pillar.pillar.split(' ').slice(1).join(' ')}</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {pillar.description}
+              </p>
+            </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {alacarte.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <Card className="h-full flex flex-col hover:border-[#39FF14] transition-colors group">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {pillar.services.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                >
+                  <Card className="h-full flex flex-col hover:border-[#39FF14] transition-colors group">
                     <CardHeader>
                       <CardTitle className="text-xl group-hover:text-[#39FF14] transition-colors">
                         {service.title}
                       </CardTitle>
                       <CardDescription>{service.deliverable}</CardDescription>
                     </CardHeader>
-                  <CardContent className="flex-1">
-                    <ul className="space-y-2">
-                      {service.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <Check className="text-[#39FF14] flex-shrink-0 mt-0.5" size={16} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+                    <CardContent className="flex-1">
+                      <ul className="space-y-2">
+                        {service.features.map((feature, i) => (
+                          <li key={i} className="flex items-start gap-2 text-sm">
+                            <Check className="text-[#39FF14] flex-shrink-0 mt-0.5" size={16} />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       {/* Signature Package */}
       <section className="py-20 px-6 bg-gradient-to-br from-[#39FF14]/10 via-transparent to-[#39FF14]/5">
