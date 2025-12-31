@@ -173,11 +173,11 @@ As thedigitalhassaan, I architect ROI-driven Digital Infrastructure through Lead
                 className="relative w-full aspect-square max-w-md mx-auto"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}>
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=600&height=600&resize=contain"
-                  alt="Hassaan Basit"
-                  fill
-                  className="rounded-2xl object-cover shadow-2xl"
+                  <Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=600&height=600&resize=contain"
+                    alt="Hassaan Basit Ali - B2B Digital Marketing Infrastructure Specialist - thedigitalhassaan"
+                    fill
+                    className="rounded-2xl object-cover shadow-2xl"
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw" />
               </motion.div>
