@@ -9,7 +9,7 @@ import { LoadingScreen } from "@/components/LoadingScreen";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Hassaan Basit Ali | Digital Marketer | B2B Marketer & Infrastructure Specialist (USA) | thedigitalhassaan",
+  title: "Hassaan Basit Ali | Digital Marketer | B2B Marketer & Infrastructure Specialist (USA)",
   description: "Specialist in B2B Lead Generation, WordPress Development, and Meta Ads for US firms. I build the Digital Infrastructure that drives high-ticket sales through organic and paid marketing. thedigitalhassaan.",
 };
 
