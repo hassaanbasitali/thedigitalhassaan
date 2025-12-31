@@ -43,11 +43,11 @@ export default function PlusAccountantsCase() {
                 transition={{ duration: 0.6 }}
                 className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black/5"
               >
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain"
-                  alt="Plus Accountants Project"
-                  fill
-                  className="object-contain"
+                  <Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Plus-accountants-1763757465924.png?width=8000&height=8000&resize=contain"
+                    alt="B2B Digital Marketing Infrastructure - WordPress Development for Australian Accounting Firm"
+                    fill
+                    className="object-contain"
                   priority
                 />
               </motion.div>
