@@ -23,12 +23,12 @@ export default function PlusAccountantsCase() {
               <ArrowLeft size={20} className="mr-2" />
               Back to Home
             </Link>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              B2B Marketing Case Study: Scaling an <span className="text-[#39FF14]">Accounting Firm</span> with Digital Infrastructure
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
-              A ROI-driven Digital Marketing transformation that doubled monthly revenue and built a sustainable B2B Lead Generation engine for an Australian Accounting Firm.
-            </p>
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                B2B Marketing Case Study: Scaling an <span className="text-[#39FF14]">Accounting Firm</span> with Digital Infrastructure
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
+                A ROI-driven Digital Marketing transformation that delivered 50+ sales and 20+ upsells through a sustainable B2B Lead Generation engine for an Australian Accounting Firm.
+              </p>
           </motion.div>
         </div>
       </section>
