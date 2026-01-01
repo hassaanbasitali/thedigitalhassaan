@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     description: "I build digital infrastructure that drives high-ticket sales for US professional service firms.",
     creator: "@thedigitalhassaan",
   },
+  alternates: {
+    canonical: "https://thedigitalhassaan.com",
+  },
   robots: {
     index: true,
     follow: true,
