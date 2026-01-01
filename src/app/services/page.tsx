@@ -79,18 +79,18 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="min-h-[70vh] flex items-center justify-center pt-20 px-6">
         <div className="container mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              The <span className="text-[#39FF14]">Execution Pillars</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              I build the Digital Infrastructure that drives high-ticket sales for USA professional service firms as a dedicated Digital Infrastructure Architect.
-            </p>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                The <span className="text-[#39FF14]">Execution Pillars</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
+                I build the Digital Infrastructure that drives high-ticket sales for USA professional service firms as a dedicated Digital Infrastructure Architect (thedigitalhassaan).
+              </p>
+            </motion.div>
         </div>
       </section>
 
