@@ -150,12 +150,12 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}>
                 <Link href="/services">
-                  <Button size="lg" className="bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)]">
-                    View My Services <ArrowRight className="ml-2" size={20} />
+                  <Button size="lg" className="w-full sm:w-auto bg-[#39FF14] text-black hover:bg-[#39FF14]/90 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)]">
+                    View My Services <ArrowRight className="ml-2" size={18} />
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-all duration-300 hover:scale-105">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-all duration-300 hover:scale-105">
                     Get In Touch
                   </Button>
                 </Link>
