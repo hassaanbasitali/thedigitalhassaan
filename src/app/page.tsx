@@ -129,6 +129,28 @@ export default function Home() {
 
   return (
     <>
+      <Script id="structured-data" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Hassaan Basit Ali",
+          "url": "https://thedigitalhassaan.com",
+          "jobTitle": "B2B Marketing & Infrastructure Specialist",
+          "sameAs": [
+            "https://www.linkedin.com/in/thedigitalhassaan/",
+            "https://www.instagram.com/thedigitalhassaan/",
+            "https://www.facebook.com/thedigitalhassaan/"
+          ],
+          "description": "Specialist in B2B Lead Generation, WordPress Development, and Meta Ads for US professional service firms.",
+          "knowsAbout": [
+            "B2B Marketing",
+            "Digital Infrastructure",
+            "Lead Generation",
+            "Meta Ads",
+            "WordPress Development"
+          ]
+        })}
+      </Script>
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-16 md:pt-20 px-4 md:px-6">
         <div className="container mx-auto">
