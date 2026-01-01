@@ -11,7 +11,34 @@ import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
   title: "Hassaan Basit Ali | Digital Marketer | B2B Marketer & Infrastructure Specialist (USA)",
   description: "Specialist in B2B Lead Generation, WordPress Development, and Meta Ads for US firms. I build the Digital Infrastructure that drives high-ticket sales through organic and paid marketing. thedigitalhassaan.",
-  keywords: ["B2B Digital Marketing", "Digital Infrastructure Architect", "B2B Lead Generation USA", "WordPress Website Development", "Meta Ads Expert", "thedigitalhassaan", "Hassaan Basit Ali"],
+  keywords: ["B2B Digital Marketing", "Digital Infrastructure Architect", "B2B Lead Generation USA", "WordPress Website Development", "Meta Ads Expert", "thedigitalhassaan", "Hassaan Basit Ali", "Lead Generation Expert USA", "Digital Marketing Strategy"],
+  authors: [{ name: "Hassaan Basit Ali" }],
+  creator: "Hassaan Basit Ali",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://thedigitalhassaan.com",
+    title: "Hassaan Basit Ali | B2B Marketer & Infrastructure Specialist",
+    description: "I build digital infrastructure that drives high-ticket sales for US professional service firms. Specialist in B2B Lead Generation, WordPress, and Meta Ads.",
+    siteName: "thedigitalhassaan",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hassaan Basit Ali | B2B Marketer & Infrastructure Specialist",
+    description: "I build digital infrastructure that drives high-ticket sales for US professional service firms.",
+    creator: "@thedigitalhassaan",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
