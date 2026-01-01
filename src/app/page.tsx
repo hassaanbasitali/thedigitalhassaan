@@ -131,7 +131,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-16 md:pt-20 px-4 md:px-6">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
