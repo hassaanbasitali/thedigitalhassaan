@@ -47,12 +47,11 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}>
 
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Let's Build Something
-              <span className="text-[#39FF14]"> Amazing</span>
+<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Hire a <span className="text-[#39FF14]">B2B Marketer in USA</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to transform your digital presence? Let's start the conversation.
+            <p className="text-xl text-muted-foreground mb-8">
+              Ready to scale your professional services firm? Let's discuss building a Digital Infrastructure that drives high-ticket sales through B2B Lead Generation and strategic marketing.
             </p>
           </motion.div>
         </div>
