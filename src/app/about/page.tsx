@@ -131,10 +131,10 @@ export default function AboutPage() {
               className="relative">
 
               <div className="relative w-full aspect-square max-w-md mx-auto">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Secondary-Image-1762817919635.jpg?width=800&height=800&resize=contain"
-                  alt="Hassaan Basit"
-                  fill
+<Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Portfolio-Main-Image-1762817919671.jpg?width=600&height=600&resize=contain"
+                    alt="Hassaan Basit Ali - B2B Digital Marketing Specialist USA - thedigitalhassaan"
+                    fill
                   className="rounded-2xl object-cover shadow-2xl"
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw" />
