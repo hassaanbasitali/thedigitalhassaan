@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/Footer";
 import { useState, useRef } from "react";
 import { toast } from "sonner";
+import Script from "next/script";
 
 const projects = [
 {
