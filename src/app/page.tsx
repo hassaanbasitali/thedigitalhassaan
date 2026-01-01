@@ -137,13 +137,12 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}>
 
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
-                  B2B Digital Marketing &
-                  <span className="text-[#39FF14]"> Infrastructure Specialist</span> for USA Professional Services
+                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-foreground">
+                  B2B Marketing
+                  <span className="text-[#39FF14]"> Specialist</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 !whitespace-pre-line">I bridge the gap between B2B marketing strategy and technical execution.
-
-As a Digital Infrastructure Architect (thedigitalhassaan), I build high-performance ecosystems focused on B2B Lead Generation, Organic Marketing, and forensic Market Research to scale high-ticket sales for US firms.
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
+                  I build digital infrastructure that drives high-ticket sales for US professional service firms.
                 </p>
               <motion.div 
                 className="flex flex-col sm:flex-row gap-4"
