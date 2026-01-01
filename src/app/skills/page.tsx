@@ -11,11 +11,11 @@ const skillCategories = [
     category: "Strategy & Market Research",
     icon: <Code size={32} />,
     skills: [
-      { name: "Market Analysis & Reporting", level: 95 },
-      { name: "Targeted Audience Research", level: 90 },
-      { name: "Forensic Competitor Analysis", level: 95 },
-      { name: "Digital Presence Audits", level: 85 },
-      { name: "Growth Strategy Development", level: 98 }
+      { name: "Market Analysis & Reporting", level: 98 },
+      { name: "Targeted Audience Research", level: 97 },
+      { name: "Forensic Competitor Analysis", level: 99 },
+      { name: "Digital Presence Audits", level: 96 },
+      { name: "Growth Strategy Development", level: 99 }
     ],
     color: "#39FF14"
   },
@@ -23,11 +23,11 @@ const skillCategories = [
     category: "Brand & Identity Architecture",
     icon: <Database size={32} />,
     skills: [
-      { name: "Brand Strategy & Messaging", level: 85 },
-      { name: "Logo & Visual Identity Design", level: 80 },
-      { name: "Professional Brand Mockups", level: 90 },
-      { name: "Brand Audits", level: 85 },
-      { name: "High-Conversion Copywriting", level: 75 }
+      { name: "Brand Strategy & Messaging", level: 97 },
+      { name: "Logo & Visual Identity Design", level: 96 },
+      { name: "Professional Brand Mockups", level: 98 },
+      { name: "Brand Audits", level: 97 },
+      { name: "High-Conversion Copywriting", level: 96 }
     ],
     color: "#39FF14"
   },
@@ -35,11 +35,11 @@ const skillCategories = [
     category: "Website & SEO Foundation",
     icon: <Palette size={32} />,
     skills: [
-      { name: "WordPress Development", level: 90 },
-      { name: "Responsive & Interactive Design", level: 85 },
-      { name: "SEO Content Writing", level: 80 },
-      { name: "WhatsApp & Social Integration", level: 85 },
-      { name: "Full-Funnel Ecosystem Design", level: 88 }
+      { name: "WordPress Development", level: 98 },
+      { name: "Responsive & Interactive Design", level: 97 },
+      { name: "SEO Content Writing", level: 96 },
+      { name: "WhatsApp & Social Integration", level: 97 },
+      { name: "Full-Funnel Ecosystem Design", level: 98 }
     ],
     color: "#39FF14"
   },
@@ -47,11 +47,11 @@ const skillCategories = [
     category: "Organic Marketing & Content",
     icon: <Search size={32} />,
     skills: [
-      { name: "Social Media Strategy", level: 95 },
-      { name: "High-Engagement Content Creation", level: 90 },
-      { name: "Researched Captions & Hashtags", level: 92 },
-      { name: "Content Scheduling & Management", level: 85 },
-      { name: "Systemization & Process Building", level: 88 }
+      { name: "Social Media Strategy", level: 99 },
+      { name: "High-Engagement Content Creation", level: 98 },
+      { name: "Researched Captions & Hashtags", level: 97 },
+      { name: "Content Scheduling & Management", level: 96 },
+      { name: "Systemization & Process Building", level: 98 }
     ],
     color: "#39FF14"
   },
@@ -59,11 +59,11 @@ const skillCategories = [
     category: "Social Media Advertising",
     icon: <BarChart size={32} />,
     skills: [
-      { name: "Meta Ads (Facebook & Instagram)", level: 88 },
-      { name: "Ad Creative & Copy Development", level: 85 },
-      { name: "A/B Testing & Optimization", level: 90 },
-      { name: "Winning Ad Set Identification", level: 92 },
-      { name: "Data-Driven Performance Marketing", level: 87 }
+      { name: "Meta Ads (Facebook & Instagram)", level: 98 },
+      { name: "Ad Creative & Copy Development", level: 97 },
+      { name: "A/B Testing & Optimization", level: 98 },
+      { name: "Winning Ad Set Identification", level: 99 },
+      { name: "Data-Driven Performance Marketing", level: 97 }
     ],
     color: "#39FF14"
   },
@@ -71,11 +71,11 @@ const skillCategories = [
     category: "LinkedIn Authority Building",
     icon: <Zap size={32} />,
     skills: [
-      { name: "Personal & Company Profile Optimization", level: 92 },
-      { name: "Strategic Content Creation (Posts & Articles)", level: 90 },
-      { name: "B2B Network Growth & Engagement", level: 95 },
-      { name: "Lead Generation Strategy", level: 88 },
-      { name: "Transparent Project Management", level: 90 }
+      { name: "Personal & Company Profile Optimization", level: 98 },
+      { name: "Strategic Content Creation (Posts & Articles)", level: 97 },
+      { name: "B2B Network Growth & Engagement", level: 99 },
+      { name: "Lead Generation Strategy", level: 98 },
+      { name: "Transparent Project Management", level: 97 }
     ],
     color: "#39FF14"
   }
