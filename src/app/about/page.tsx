@@ -91,18 +91,18 @@ export default function AboutPage() {
       <section className="min-h-screen flex items-center justify-center pt-20 px-6">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}>
 
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                You Can't Build an
-                <span className="text-[#39FF14]"> Engine</span> with Scattered Parts.
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 font-light">
-                What makes my approach different is my perspective. I don't see myself as a freelancer you hire for a task; I see myself as your dedicated growth architect. Think about the cost and complexity of hiring a separate strategist, a web developer, and an ad manager—it's a full-time job just to keep them in sync. As your single, expert partner, I handle all of that. The process is simpler, more cost-effective, and frees you to focus on running your business, not chasing your marketing.
-              </p>
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                  You Can't Build an
+                  <span className="text-[#39FF14]"> Engine</span> with Scattered Parts.
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8 font-light">
+                  What makes my approach different is my perspective. As a dedicated B2B Marketer in USA (thedigitalhassaan), I don't see myself as a freelancer you hire for a task; I see myself as your Digital Infrastructure Architect. I believe in logical systems designed to solve psychological gaps in your target market—no buzzwords, no fluff, just sharp technical execution that drives high-ticket sales.
+                </p>
               <div className="space-y-4">
                 {[
                 "A Strategic Architect, Not Just a Marketer.",
