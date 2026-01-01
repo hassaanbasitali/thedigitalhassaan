@@ -169,7 +169,7 @@ export default function Home() {
               className="relative">
 
               <motion.div 
-                className="relative w-full aspect-square max-w-md mx-auto"
+                className="relative w-full aspect-square max-w-xs sm:max-w-sm md:max-w-md mx-auto"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}>
                     <Image
