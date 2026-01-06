@@ -139,8 +139,10 @@ export default function Home() {
           "jobTitle": "B2B Marketing & Infrastructure Specialist",
           "sameAs": [
             "https://www.linkedin.com/in/thedigitalhassaan/",
-            "https://www.instagram.com/thedigitalhassaan/",
-            "https://www.facebook.com/thedigitalhassaan/"
+            "https://www.threads.com/@thedigitalhassaan?hl=en",
+            "https://x.com/tdhassaan",
+            "https://www.facebook.com/thedigitalhassaan/",
+            "https://www.instagram.com/thedigitalhassaan/"
           ],
           "description": "Specialist in B2B Lead Generation, WordPress Development, and Meta Ads for US professional service firms.",
           "knowsAbout": [
