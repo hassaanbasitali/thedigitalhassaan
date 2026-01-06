@@ -1,4 +1,5 @@
-import { Mail, Phone, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { FaThreads, FaXTwitter, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
 
 export function Footer() {
@@ -19,31 +20,44 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/thedigitalhassaan/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300 !bg-transparent !text-transparent !border-transparent"
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
                 aria-label="LinkedIn">
-
-                <Linkedin size={18} />
+                <FaLinkedin size={18} />
               </a>
               <a
-                href="https://github.com"
+                href="https://www.threads.com/@thedigitalhassaan?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300 !border-transparent"
-                aria-label="GitHub">
-
-                <Github size={18} className="!text-transparent !bg-transparent" />
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                aria-label="Threads">
+                <FaThreads size={18} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/tdhassaan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300 !bg-transparent !text-transparent !border-transparent"
-                aria-label="Twitter">
-
-                <Twitter size={18} />
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                aria-label="X (Twitter)">
+                <FaXTwitter size={18} />
+              </a>
+              <a
+                href="https://www.facebook.com/thedigitalhassaan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                aria-label="Facebook">
+                <FaFacebook size={18} />
+              </a>
+              <a
+                href="https://www.instagram.com/thedigitalhassaan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 rounded-full border border-[#39FF14] flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                aria-label="Instagram">
+                <FaInstagram size={18} />
               </a>
             </div>
           </div>
