@@ -432,11 +432,29 @@ export default function Home() {
                     <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       whileTap={{ scale: 0.95 }}
-                      href="https://www.instagram.com/thedigitalhassaan/"
+                      href="https://www.linkedin.com/in/thedigitalhassaan/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
-                      <Instagram className="text-[#39FF14]" size={20} />
+                      <FaLinkedin className="text-[#39FF14]" size={20} />
+                    </motion.a>
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                      href="https://www.threads.com/@thedigitalhassaan?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <FaThreads className="text-[#39FF14]" size={20} />
+                    </motion.a>
+                    <motion.a
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                      href="https://x.com/tdhassaan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
+                      <FaXTwitter className="text-[#39FF14]" size={20} />
                     </motion.a>
                     <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
@@ -445,25 +463,16 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
-                      <Facebook className="text-[#39FF14]" size={20} />
+                      <FaFacebook className="text-[#39FF14]" size={20} />
                     </motion.a>
                     <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       whileTap={{ scale: 0.95 }}
-                      href="https://www.linkedin.com/in/thedigitalhassaan/"
+                      href="https://www.instagram.com/thedigitalhassaan/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
-                      <Linkedin className="text-[#39FF14]" size={20} />
-                    </motion.a>
-                    <motion.a
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      whileTap={{ scale: 0.95 }}
-                      href="https://www.fiverr.com/hassaanbasit/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="h-12 w-12 rounded-full bg-[#39FF14]/10 flex items-center justify-center hover:bg-[#39FF14]/20 transition-colors">
-                      <Globe className="text-[#39FF14]" size={20} />
+                      <FaInstagram className="text-[#39FF14]" size={20} />
                     </motion.a>
                   </div>
                 </div>
