@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Star, Mail, Phone, MapPin, Send, Instagram, Facebook, Linkedin, Globe, MoveHorizontal } from "lucide-react";
+import { FaThreads, FaXTwitter, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
