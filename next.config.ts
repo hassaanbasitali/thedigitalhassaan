@@ -1,7 +1,4 @@
 import type { NextConfig } from "next";
-import path from "node:path";
-
-const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {
   output: 'standalone',
@@ -21,24 +18,22 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
   typescript: {
     ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
-    compress: true,
-    poweredByHeader: false,
-    reactStrictMode: true,
-    swcMinify: true,
-    compiler: {
-      removeConsole: process.env.NODE_ENV === "production",
-    },
-    experimental: {
-      optimizePackageImports: ['framer-motion', 'lucide-react', 'clsx', 'tailwind-merge'],
-    }
-
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  experimental: {
+    optimizePackageImports: ['framer-motion', 'lucide-react', 'clsx', 'tailwind-merge'],
+  },
 };
 
 export default nextConfig;
