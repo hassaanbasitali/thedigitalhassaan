@@ -1,13 +1,16 @@
 #!/bin/bash
 # ================================================
-# Hostinger VPS Deploy Script — thedigitalhassaan
-# Run this after SSHing into your VPS
+# Hostinger Node.js Web App Deploy Script
+# Run this after SSHing into your VPS/Node app
 # ================================================
 
 set -e
 
+echo ">>> Node version: $(node --version)"
+echo ">>> npm version: $(npm --version)"
+
 echo ">>> Installing dependencies..."
-npm install --frozen-lockfile
+npm install --legacy-peer-deps
 
 echo ">>> Building Next.js standalone..."
 npm run build
@@ -21,7 +24,7 @@ echo ""
 echo "To start the server, run:"
 echo "  node .next/standalone/server.js"
 echo ""
-echo "To run with PM2 (recommended for VPS):"
+echo "To run with PM2 (recommended):"
 echo "  pm2 start .next/standalone/server.js --name hassaan-portfolio"
 echo "  pm2 save"
 echo "  pm2 startup"
